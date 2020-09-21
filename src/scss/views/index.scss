@@ -1,0 +1,303 @@
+.main-page {
+  // .main-page__catalog
+  &__catalog {
+    margin-top : 90px;
+  }
+
+  // .main-page__write-us
+  &__write-us {
+    width            : 100vw;
+    margin-left      : calc((100vw - #{$desktopWidth} + 30px) / -2);
+
+  }
+
+  // .main-page__repair-documentation
+  &__repair-documentation {
+    margin-top : 110px;
+  }
+
+  // .main-page__about
+  &__about {
+    margin-top : 100px;
+  }
+
+  // .main-page__advantages
+  &__advantages {
+    margin-top : 80px;
+  }
+
+  // .main-page__forgery
+  &__forgery {
+    width            : 100vw;
+    margin-left      : calc((100vw - #{$desktopWidth} + 30px) / -2);
+    margin-top : 35px;
+
+  }
+}
+
+.catalog-categories {
+  // .catalog-categories__title
+  &__title {
+    font-size      : 30px;
+    font-weight    : bold;
+    line-height    : 1.2666;
+    text-transform : uppercase;
+    color          : #252b33;
+  }
+
+  // .catalog-categories__inner
+  &__inner {
+    display    : flex;
+    flex-wrap  : wrap;
+    margin-top : 60px;
+
+
+  }
+
+  // .catalog-categories__item
+  &__item {
+    flex          : 1 1 calc(100% / 4);
+    margin-bottom : 60px;
+  }
+}
+
+.item-category {
+  text-decoration : none;
+
+  // .item-category__image
+  &__image {
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    min-height      : 226px;
+  }
+
+  // .item-category__title
+  &__title {
+    font-size   : 16px;
+    font-weight : 500;
+    line-height : 1.12;
+    margin-top  : 20px;
+    text-align  : center;
+  }
+}
+
+
+.write-us-block {
+
+  padding          : 40px 0;
+  background-color : #1568a4;
+
+  // .write-us-block__description
+  &__description {
+  }
+
+  // .write-us-block__form
+  &__form {
+  }
+}
+
+.description-write-us {
+  max-width : 400px;
+  color     : #fff;
+
+  // .description-write-us__icon
+  &__icon {
+  }
+
+  // .description-write-us__title
+  &__title {
+    font-size   : 15px;
+    font-weight : bold;
+    line-height : 1.2;
+    margin-top  : 50px;
+  }
+
+  // .description-write-us__text
+  &__text {
+    font-size   : 13px;
+    line-height : 1.3846;
+
+  }
+}
+
+.form-write-us {
+  // .form-write-us__title
+  &__title {
+  }
+
+  // .form-write-us__inner
+  &__inner {
+  }
+}
+
+
+.repair-documentation {
+  // .repair-documentation__header
+  &__header {
+    display         : flex;
+    align-items     : center;
+    justify-content : space-between;
+  }
+
+  // .repair-documentation__title
+  &__title {
+    font-size      : 30px;
+    font-weight    : bold;
+    line-height    : 1.2666;
+    letter-spacing : 0.05em;
+    color          : #252b33;
+  }
+
+  // .repair-documentation__search
+  &__search {
+    flex : 0 1 413px;
+
+  }
+
+  // .repair-documentation__inner
+  &__inner {
+    display    : flex;
+    flex-wrap  : wrap;
+    margin-top : 30px;
+  }
+
+  // .repair-documentation__item
+  &__item {
+    flex : 1 1 calc(100% / 3);
+  }
+}
+
+.item-repair-documentation {
+  text-decoration : none;
+
+  // .item-repair-documentation__image
+  &__image {
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+  }
+
+  // .item-repair-documentation__title
+  &__title {
+    margin-top : 20px;
+
+  }
+}
+
+
+.search-repair-documentation {
+  position : relative;
+
+
+  // .search-repair-documentation__field
+  &__field {
+    font-size        : 12px;
+    line-height      : 1.25;
+    box-sizing       : border-box;
+    width            : 100%;
+    padding          : 12px 18px 12px 45px;
+    border           : 1px solid #e5e5e5;
+    border-radius    : 10px;
+    background-color : #f4f4f4;
+
+
+  }
+
+  // .search-repair-documentation__btn
+  &__btn {
+    position : absolute;
+    top      : 12px;
+    left     : 18px;
+  }
+}
+
+
+.about-block {
+  display : flex;
+  color   : #252b33;
+
+  // .about-block__image
+  &__image {
+    margin-right : 100px;
+    flex : 0 0 331px;
+  }
+
+  // .about-block__content
+  &__content {
+
+  }
+
+  // .about-block__title
+  &__title {
+    font-size   : 30px;
+    font-weight : bold;
+    line-height : 1.2666;
+  }
+
+  // .about-block__text
+  &__text {
+    font-size   : 15px;
+    line-height : 1.2;
+    margin-top : 25px;
+  }
+}
+
+.advantages-block {
+  // .advantages-block__inner
+  &__inner {
+    display : flex;
+
+  }
+
+  // .advantages-block__item
+  &__item {
+    margin-right : 120px;
+    flex : 1 1 calc(100% / 3);
+
+    &:last-child {
+      margin-right : 0;
+    }
+
+  }
+}
+
+.item-advantage {
+  color : #252b33;
+
+  // .item-advantage__icon
+  &__icon {
+  }
+
+  // .item-advantage__title
+  &__title {
+    font-size   : 15px;
+    font-weight : bold;
+    line-height : 1.2;
+    color       : #252b33;
+    margin-top : 20px;
+  }
+
+  // .item-advantage__text
+  &__text {
+    font-size   : 13px;
+    line-height : 1.38;
+    margin-top : 15px;
+  }
+}
+
+
+.forgery-information {
+  background-image : url(../../img/forgery.png);
+  background-repeat : no-repeat;
+  background-color: #7A8695;
+  font-size: 15px;
+  line-height: 1.2666;
+  color: #FFFFFF;
+  padding: 80px 0 60px;
+
+  // .forgery-information__inner
+  &__inner {
+    padding-left: 470px;
+  }
+}

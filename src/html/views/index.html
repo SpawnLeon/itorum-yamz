@@ -1,0 +1,242 @@
+<% var data = {
+title: "Заголовок | Проект",
+
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<%= _.template(require('./../includes/main-slider.html').default)(data) %>
+<div class="container">
+
+  <div class="main-page__catalog catalog-categories">
+    <div class="catalog-categories__title">
+      Категории
+    </div>
+    <div class="catalog-categories__inner">
+      <a href=""
+         class="catalog-categories__item item-category">
+        <div class="item-category__image">
+          <img src="uploads/item-category/1.png"
+               alt="">
+        </div>
+        <div class="item-category__title">Двигатели</div>
+      </a>
+      <a class="catalog-categories__item item-category">
+        <div class="item-category__image">
+          <img src="uploads/item-category/2.png"
+               alt="">
+        </div>
+        <div class="item-category__title">Коробки передач</div>
+      </a>
+      <a href=""
+         class="catalog-categories__item item-category">
+        <div class="item-category__image">
+          <img src="uploads/item-category/3.png"
+               alt="">
+        </div>
+        <div class="item-category__title">Сцепление</div>
+      </a>
+      <a href=""
+         class="catalog-categories__item item-category">
+        <div class="item-category__image">
+          <img src="uploads/item-category/4.png"
+               alt="">
+        </div>
+        <div class="item-category__title">Генераторные установки</div>
+      </a>
+      <a href=""
+         class="catalog-categories__item item-category">
+        <div class="item-category__image">
+          <img src="uploads/item-category/5.png"
+               alt="">
+        </div>
+        <div class="item-category__title">Запасные части</div>
+      </a>
+      <a href=""
+         class="catalog-categories__item item-category">
+        <div class="item-category__image">
+          <img src="uploads/item-category/6.png"
+               alt="">
+        </div>
+        <div class="item-category__title">ТНВД</div>
+      </a>
+      <a href=""
+         class="catalog-categories__item item-category">
+        <div class="item-category__image">
+          <img src="uploads/item-category/7.png"
+               alt="">
+        </div>
+        <div class="item-category__title">Инструменты и принадлежности</div>
+      </a>
+      <div class="catalog-categories__item item-category">
+        <div class="item-category__image">
+          <img src="uploads/item-category/8.png"
+               alt="">
+        </div>
+        <div class="item-category__title">Резинотехнические изделия</div>
+      </div>
+    </div>
+  </div>
+  <div class="main-page__write-us write-us-block">
+    <div class="container write-us-block__container">
+      <div class="write-us-block__description description-write-us">
+
+        <svg
+          class="description-write-us__icon"
+          width="193"
+          height="193">
+          <use xlink:href="img/spritemap.svg#sprite-write-us"></use>
+        </svg>
+        <div class="description-write-us__title">
+          Мы работаем, потому что ценим Вас
+        </div>
+        <div class="description-write-us__text">
+          <p>
+            Вы всегда можете обратиться за консультацией по любому вопросу в call-center нашего предприятия, который работает
+            <b>c 8:00 до 20:00 7 дней в неделю.</b>
+          </p>
+          <p>
+            Ваше мнение и Ваши отзывы важны для нас, мы стараемся всегда идти Вам навстречу!
+          </p>
+        </div>
+
+      </div>
+      <div class="write-us-block__form form-write-us">
+        <form action="">
+          <div class="form-write-us__title">Напишите нам</div>
+          <div class="form-write-us__inner">
+            form here
+          </div>
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+  <div class="main-page__repair-documentation repair-documentation">
+    <header class="repair-documentation__header">
+      <div class="repair-documentation__title">Эксплуатационная и ремонтная документация</div>
+      <div class="repair-documentation__search search-repair-documentation">
+        <form action="">
+          <div class="search-repair-documentation__inner">
+            <input type="text"
+                   placeholder="Поиск документа"
+                   class="search-repair-documentation__field">
+            <button class="search-repair-documentation__btn btn--clear">
+              <svg
+                width="14"
+                height="15">
+                <use xlink:href="img/spritemap.svg#sprite-search-repair"></use>
+              </svg>
+            </button>
+          </div>
+
+        </form>
+
+      </div>
+    </header>
+    <div class="repair-documentation__inner">
+      <a href=""
+         class="repair-documentation__item item-repair-documentation">
+        <div class="item-repair-documentation__image">
+          <img src="uploads/item-repair-documentation/1.jpg"
+               alt="">
+        </div>
+        <div class="item-repair-documentation__title">
+          Руководство <br>
+          по эксплуатации
+        </div>
+      </a>
+      <a href=""
+         class="repair-documentation__item item-repair-documentation">
+        <div class="item-repair-documentation__image">
+          <img src="uploads/item-repair-documentation/2.jpg"
+               alt="">
+        </div>
+        <div class="item-repair-documentation__title">
+          Руководство <br>
+          по ремонту
+        </div>
+      </a>
+      <a href=""
+         class="repair-documentation__item item-repair-documentation">
+        <div class="item-repair-documentation__image">
+          <img src="uploads/item-repair-documentation/3.jpg"
+               alt="">
+        </div>
+        <div class="item-repair-documentation__title">
+          Каталог <br>
+          изделия
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="main-page__about about-block">
+    <div class="about-block__image">
+      <img src="img/pages/index/about.jpg"
+           alt="">
+    </div>
+    <div class="about-block__content">
+      <h1 class="about-block__title">О магазине</h1>
+      <div class="about-block__text">
+        Ярославский моторный завод – одно из крупнейших российских предприятий, производящих дизельные двигатели многоцелевого назначения, запасные части к ним, коробки передач, сцепления, а также дизель-генераторные установки на базе собственных двигателей.
+      </div>
+    </div>
+  </div>
+  <div class="main-page__advantages advantages-block">
+    <div class="advantages-block__inner">
+      <div class="advantages-block__item item-advantage">
+        <div class="item-advantage__icon">
+          <svg
+            width="76"
+            height="76">
+            <use xlink:href="img/spritemap.svg#sprite-advantage-1"></use>
+          </svg>
+        </div>
+        <div class="item-advantage__title">Чтобы у Вас был выбор</div>
+        <div class="item-advantage__text">
+          В нашем интернет-магазине вы найдете весь ассортимент сборочных единиц и деталей (более 5300 наименований выпускаемой продукции), необходимых для поддержания силового агрегата производства «ЯМЗ» в рабочем состоянии.
+        </div>
+      </div>
+      <div class="advantages-block__item item-advantage">
+        <div class="item-advantage__icon">
+          <svg
+            width="66"
+            height="66">
+            <use xlink:href="img/spritemap.svg#sprite-advantage-2"></use>
+          </svg>
+        </div>
+        <div class="item-advantage__title">Чтобы Вы приобретали только качественные товары</div>
+        <div class="item-advantage__text">
+          Приобретая запасные части в нашем интернет-магазине, вы защищаете себя от контрафакта и можете быть уверены в их качестве и надежности, что позволит Вашему силовому агрегату оставаться работоспособным 24 часа в сутки 365 дней в году.
+        </div>
+      </div>
+      <div class="advantages-block__item item-advantage">
+        <div class="item-advantage__icon">
+          <svg
+            width="97"
+            height="97">
+            <use xlink:href="img/spritemap.svg#sprite-advantage-3"></use>
+          </svg>
+        </div>
+        <div class="item-advantage__title">Чтобы Ваш и покупки были выгодными</div>
+        <div class="item-advantage__text">
+          Мы предлагаем выгодные цены на силовые агрегаты и запчасти к ним, поскольку у нас гибкая ценовая политика, а система скидок – всегда лояльна.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-page__forgery forgery-information">
+    <div class="container forgery-information__inner">
+      <p>
+        Мы понимаем, что, желая сэкономить, некоторые владельцы транспортных средств часто приобретают либо альтернативные, либо неизвестного происхождения запчасти. Такие детали производятся в лучшем случае из дешевого сырья, по упрощенной технологии, а в худшем – из комплектующих, бывших в употреблении.
+      </p>
+      <p>
+        Ярославский моторный завод противодействует распространению на рынке контрафакта и обеспечивает своих потребителей качественным фирменным ремонтом.
+      </p>
+    </div>
+  </div>
+
+
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

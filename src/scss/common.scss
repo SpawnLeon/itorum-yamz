@@ -1,0 +1,119 @@
+
+html {
+  font-size   : $mainFontSize;
+  line-height : $mainLineHeight;
+  height      : 100%;
+  color       : $mainFontColor;
+
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+}
+
+body {
+  font-family             : $mainFont;
+  font-size               : $mainFontSize;
+  font-weight             : $mainFontWeight;
+  line-height             : $mainLineHeight;
+  overflow-x              : hidden;
+  width                   : 100%;
+  max-width               : 100vw;
+  margin                  : 0;
+  padding                 : 0;
+  color                   : $mainFontColor;
+  background-color        : #fff;
+  -webkit-font-smoothing  : antialiased;
+  -moz-osx-font-smoothing : grayscale;
+}
+
+ul,
+ol,
+li,
+p {
+  font-size     : 14px;
+  line-height   : 1.4285;
+  margin-top    : 1em;
+  margin-bottom : 1em;
+}
+
+
+button {
+  cursor : pointer;
+}
+
+a {
+  text-decoration          : underline;
+  color                    : #000;
+  text-decoration-skip-ink : none;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color : $accentColor;
+  }
+}
+
+
+
+
+
+
+.container {
+  position  : relative;
+  flex      : 0 0 auto;
+  width     : 100%;
+  max-width : $desktopWidth;
+  margin    : 0 auto;
+  padding   : 0 15px;
+
+
+}
+
+
+.page {
+  display        : flex;
+  flex-direction : column;
+  min-height     : 100vh;
+
+  &__header {
+  }
+
+  &__footer {
+    margin-top : auto;
+  }
+}
+
+
+.content {
+  width : 100%;
+}
+
+
+.page-content {
+  margin-bottom : auto;
+
+  // .page-content__title
+  &__title {
+    font-size : 30px;
+    margin    : 5px 0 20px;
+
+    @media screen and (max-width : 767px) {
+      font-size     : 25px;
+      margin-bottom : 20px;
+    }
+  }
+}
+
+[class*='has-sidebar'] {
+  display : flex;
+}
+
+.container__inner {
+  flex-grow : 1;
+  width     : auto;
+}
+
+.sidebar + .container__inner {
+  flex-basis : calc(100% - #{$sidebarWidth});
+  max-width  : 100%;
+}

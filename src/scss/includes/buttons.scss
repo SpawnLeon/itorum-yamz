@@ -1,0 +1,63 @@
+@import 'vars.scss';
+
+button {
+  margin           : 0;
+  padding          : 0;
+  cursor           : pointer;
+  border           : none;
+  outline          : none;
+  background-color : transparent;
+
+}
+
+
+.btn--clear {
+  line-height     : inherit;
+  display         : inline-block;
+  margin          : 0;
+  padding         : 0;
+  cursor          : pointer;
+  text-decoration : none;
+  border          : none;
+  outline         : none;
+  background      : none;
+
+}
+
+.btn {
+  font-size      : 15px;
+  font-weight    : bold;
+  font-style     : normal;
+  padding        : 11px 40px;
+  transition     : all 0.3s;
+  text-align     : center;
+  text-transform : uppercase;
+  border         : 1px solid #005693;
+  border-radius  : 100px;
+
+
+  &:hover,
+  &:active,
+  &:focus {
+    color : #000;
+
+  }
+
+  &:active {
+  }
+
+
+  &--fill {
+    color            : #fff;
+    background-color : #005693;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color : #005693;
+      background-color : transparent;
+
+    }
+  }
+
+}

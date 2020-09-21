@@ -1,0 +1,40 @@
+@import '../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css';
+
+@import 'fonts';
+@import 'includes/reset';
+@import 'includes/vars';
+
+@import "common";
+
+@import 'includes/buttons';
+
+@import 'includes/header';
+@import 'includes/footer';
+@import 'includes/breadcrumbs';
+@import 'includes/sidebar';
+@import 'includes/main-slider';
+@import 'includes/pagination';
+@import 'includes/total-block';
+@import 'includes/qty-block';
+@import 'includes/multi-ordered-list';
+
+//pages
+@import 'views/index';
+@import 'views/forms';
+@import 'views/catalog';
+@import 'views/category';
+@import 'views/product';
+@import 'views/delivery';
+@import 'views/payment';
+@import 'views/checkout';
+@import 'views/registration';
+@import 'views/basket';
+@import 'views/about';
+@import 'views/contacts';
+@import 'views/personal';
+@import 'views/personal-orders';
+@import 'views/order';
+@import 'views/purchase-returns';
+@import 'views/search-part';
+
+

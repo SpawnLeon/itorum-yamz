@@ -1,0 +1,101 @@
+.page {
+  // .page__footer
+  &__footer {
+  }
+}
+
+.footer {
+  color            : #fff;
+  background-color : #222325;
+
+  a {
+    color : #fff;
+  }
+
+  // .footer__top
+  &__top {
+    display         : flex;
+    justify-content : space-between;
+    align-items : center;
+  }
+
+  // .footer__logo
+  &__logo {
+  }
+
+  // .footer__menus
+  &__menus {
+  }
+
+  // .footer__nav
+  &__nav {
+  }
+
+  // .footer__main-menu
+  &__main-menu {
+  }
+
+  // .footer__bottom
+  &__bottom {
+  }
+
+  // .footer__law
+  &__law {
+  }
+
+  // .footer__year
+  &__year {
+  }
+
+  // .footer__copyright
+  &__copyright {
+  }
+
+  // .footer__phones
+  &__phones {
+  }
+  // .footer__phone
+  &__phone {
+
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 1.2307;
+
+
+
+  }
+}
+
+
+.bottom-menu {
+  display : flex;
+
+
+  // .bottom-menu__item
+  &__item {
+    margin : 0 50px 0 0;
+
+    &:last-child {
+      margin-right : 0;
+    }
+  }
+
+  // .bottom-menu__link
+  &__link {
+    font-size       : 14px;
+    font-weight     : 500;
+    line-height     : 1.2857;
+    text-decoration : none;
+
+  }
+}
+
+
+
+
+
+.law-block {
+  // .law-block__item
+  &__item {
+  }
+}
