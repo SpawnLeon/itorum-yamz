@@ -1,0 +1,26 @@
+.breadcrumbs {
+  display     : flex;
+  align-items : center;
+  margin : 30px 0 20px;
+
+  // .breadcrumbs__item
+  &__item {
+    display     : flex;
+    align-items : center;
+  }
+
+  // .breadcrumbs__link
+  &__link {
+    font-size   : 12px;
+    line-height : 1.5;
+  }
+
+  // .breadcrumbs__delimiter
+  &__delimiter {
+    display          : block;
+    width            : 4px;
+    height           : 5px;
+    margin           : 0 5px;
+    background-image : url(../../img/svg/breadcrumbs.svg);
+  }
+}

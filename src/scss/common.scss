@@ -91,16 +91,20 @@ a {
 
 .page-content {
   margin-bottom : auto;
+  margin-bottom: 60px;
 
   // .page-content__title
   &__title {
     font-size : 30px;
-    margin    : 5px 0 20px;
+    margin    : 20px 0 20px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1.2666;
+    letter-spacing: 0.05em;
+    color: #252B33;
 
-    @media screen and (max-width : 767px) {
-      font-size     : 25px;
-      margin-bottom : 20px;
-    }
+
+
   }
 }
 

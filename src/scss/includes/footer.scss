@@ -7,6 +7,7 @@
 .footer {
   color            : #fff;
   background-color : #222325;
+  padding: 65px 0 95px ;
 
   a {
     color : #fff;
@@ -15,7 +16,6 @@
   // .footer__top
   &__top {
     display         : flex;
-    justify-content : space-between;
     align-items : center;
   }
 
@@ -25,6 +25,7 @@
 
   // .footer__menus
   &__menus {
+    margin-left : 160px;
   }
 
   // .footer__nav
@@ -37,22 +38,28 @@
 
   // .footer__bottom
   &__bottom {
+    margin-top : 140px;
+    display : flex;
   }
 
   // .footer__law
   &__law {
+    margin-left : 293px;
   }
 
   // .footer__year
   &__year {
+    margin-left : auto;
   }
 
-  // .footer__copyright
-  &__copyright {
+  // .footer__dev
+  &__dev {
+    margin-left : 65px;
   }
 
   // .footer__phones
   &__phones {
+    margin-left : 130px;
   }
   // .footer__phone
   &__phone {
@@ -60,9 +67,6 @@
     font-weight: bold;
     font-size: 13px;
     line-height: 1.2307;
-
-
-
   }
 }
 

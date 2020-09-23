@@ -30,7 +30,12 @@
   &__forgery {
     width            : 100vw;
     margin-left      : calc((100vw - #{$desktopWidth} + 30px) / -2);
-    margin-top : 35px;
+    margin-top : 70px;
+  }
+
+  // .main-page__filter
+  &__filter {
+    margin-top : 60px;
 
   }
 }
@@ -301,3 +306,28 @@
     padding-left: 470px;
   }
 }
+
+
+
+
+
+
+
+
+
+.main-page-filter {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.25;
+  text-align: center;
+  color: #222325;
+  text-transform : uppercase;
+
+  // .main-page-filter__form
+  &__form {
+  }
+  // .main-page-filter__btn
+  &__btn {
+  }
+}
+

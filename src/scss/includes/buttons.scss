@@ -25,13 +25,16 @@ button {
 }
 
 .btn {
-  font-size      : 15px;
+
+  font-size      : 12px;
   font-weight    : bold;
   font-style     : normal;
+  line-height    : 1.25;
   padding        : 11px 40px;
   transition     : all 0.3s;
   text-align     : center;
   text-transform : uppercase;
+  color          : #fff;
   border         : 1px solid #005693;
   border-radius  : 100px;
 
@@ -54,7 +57,7 @@ button {
     &:hover,
     &:active,
     &:focus {
-      color : #005693;
+      color            : #005693;
       background-color : transparent;
 
     }

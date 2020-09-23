@@ -1,19 +1,27 @@
 .header {
   font-size   : 12px;
   line-height : 1.25;
-  display     : flex;
-  position : relative;
-  z-index : 2 ;
+  position    : relative;
+  z-index     : 2;
+
+
+  // .header__inner
+  &__inner {
+    display     : flex;
+  }
 
   // .header__logo
   &__logo {
-    display          : flex;
-    align-items      : center;
-    justify-content  : center;
-    width            : 160px;
-    height           : 147px;
-    margin-bottom    : -34px;
+    display: flex;
+    justify-content: center;
+    width: 160px;
+    padding-bottom: 48px;
+    padding-top: 49px;
     background-color : #252b33;
+    margin-right: 88px;
+    position: relative;
+    top: 20px;
+
   }
 
   // .header__logo-btn
@@ -23,24 +31,24 @@
   // .header__content
   &__content {
     flex        : 1 1 auto;
-    margin-left : 48px;
+
   }
 
   // .header__row
   &__row {
     // .header__row--top
     &--top {
-      display     : flex;
-      align-items : center;
-      padding-top : 15px;
+      display: flex;
+      align-items: center;
+      padding-top: 19px;
+      padding-bottom: 16px;
+      height: 76px;
     }
 
     // .header__row--middle
     &--middle {
-      display         : flex;
-      align-items     : center;
-      justify-content : space-between;
-      padding-bottom  : 17px;
+      padding    : 9px 0;
+      background : rgba(229, 229, 229, 0.6);
     }
   }
 
@@ -56,6 +64,7 @@
     display     : flex;
     align-items : center;
     margin-left : auto;
+    cursor      : pointer;
     color       : #000;
 
     > svg {
@@ -81,7 +90,7 @@
 
   // .header__nav
   &__nav {
-    margin-top : 20px;
+    margin-left: 247px;
   }
 
 
@@ -95,6 +104,18 @@
 
   // .header__basket
   &__basket {
+  }
+}
+
+.middle-header {
+  width            : 100vw;
+  margin-left      : calc((100vw - #{$desktopWidth} + 30px) / -2);
+
+  // .middle-header__container
+  &__container {
+    display         : flex;
+    align-items     : center;
+    justify-content : space-between;
   }
 }
 
@@ -122,11 +143,11 @@
 
   // .search-block__field
   &__field {
+    width            : 100%;
     padding          : 12px 12px 12px 36px;
     border           : 1px solid #e5e5e5;
     border-radius    : 10px;
     background-color : #f4f4f4;
-    width : 100% ;
 
   }
 
@@ -150,13 +171,13 @@
 
   // .catalog-menu__link
   &__link {
-    font-size   : 14px;
-    font-weight : 500;
-    line-height : 1.2857;
-    display     : flex;
+    font-size       : 14px;
+    font-weight     : 500;
+    line-height     : 1.2857;
+    display         : flex;
+    align-items     : center;
     text-decoration : none;
-    color       : #000;
-    align-items : center;
+    color           : #000;
 
 
     > svg {

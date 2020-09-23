@@ -1,8 +1,7 @@
 input:-internal-autofill-selected,
 input:-webkit-autofill {
-  background:  none!important;
+  background : none !important;
 }
-
 
 
 .form {
@@ -46,14 +45,14 @@ input:-webkit-autofill {
 
   // .form__actions
   &__actions {
-    display: flex;
-    justify-content: space-between;
-    margin-left: -10px;
-    margin-right: -10px;
+    display         : flex;
+    justify-content : space-between;
+    margin-right    : -10px;
+    margin-left     : -10px;
 
     > * {
-      margin-left: 10px;
-      margin-right: 10px;
+      margin-right : 10px;
+      margin-left  : 10px;
     }
   }
 
@@ -88,7 +87,7 @@ input:-webkit-autofill {
     $gutter      : 10px;
 
     display      : flex;
-    flex-wrap: wrap;
+    flex-wrap    : wrap;
     margin-right : -$gutter;
     margin-left  : -$gutter;
 
@@ -120,8 +119,7 @@ input:-webkit-autofill {
 
   // .item-form__label
   &__label {
-    position : relative;
-    cursor   : pointer;
+
 
 
     // .item-form__label--text
@@ -153,13 +151,13 @@ input:-webkit-autofill {
 
     // .item-form__field--text
     &--text {
-      font-size     : 13px;
-      font-weight   : normal;
-      line-height   : 16px;
-      width         : 100%;
-      padding       : 7px 0;
-      color         : #1c2127;
-      border-bottom : 1px solid #54585d;
+      font-size        : 13px;
+      line-height      : 1.2307;
+
+      width            : 100%;
+      padding          : 20px 20px;
+      border-radius    : 10px;
+      background-color : #f4f4f4;
     }
 
 
@@ -251,13 +249,12 @@ input:-webkit-autofill {
 
     // .item-form__name--text
     &--text {
-      font-size   : 12px;
-      line-height : 15px;
-      position    : absolute;
-      top         : -1px;
-      left        : 0;
-      transition  : top 0.2s;
-      color       : #54585d;
+      position: absolute;
+      top: 18px;
+      left: 20px;
+      transition: top 0.2s;
+      font-size: 13px;
+      line-height: 1.2307;
     }
 
     // .item-form__name--radio

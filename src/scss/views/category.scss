@@ -49,6 +49,7 @@
 .product-list-view {
   display         : flex;
   justify-content : flex-end;
+  margin-left     : auto;
 
   @media screen and (max-width : 767px) {
     display : none;
@@ -120,10 +121,10 @@
 
   // .product-list__item
   &__item {
-    $width    : calc(100% / 4 - 14px);
+    $width    : calc(100% / 3 - 20px);
     flex      : 0 0 $width;
     max-width : $width;
-    margin    : 0 7px 14px;
+    margin    : 0 10px 20px;
 
     @media screen and (max-width : 1023px) {
       $width    : calc(100% / 3 - 14px);
@@ -140,14 +141,14 @@
 
   // .product-list__item--list
   &__item--list {
-    flex : 1 1 auto;
+    flex      : 1 1 auto;
     max-width : 100%;
   }
 }
 
 .item-product {
-  padding          : 15px 15px 25px 15px;
-  border           : 1px solid #c4c4c4;
+  padding          : 15px 25px 25px 25px;
+  border           : 1px solid #e5e5e5;
   background-color : #fff;
 
   &:active,
@@ -166,6 +167,7 @@
 
   // .item-product__info
   &__info {
+    margin-top : 21px;
   }
 
   // .item-product__name
@@ -176,23 +178,23 @@
     display         : block;
     overflow        : hidden;
     height          : 35px;
-    margin-bottom   : 5px;
     text-decoration : none;
     color           : $mainFontColor;
   }
 
   // .item-product__props
   &__props {
+    margin-top : 8px;
   }
 
   // .item-product__prices
   &__prices {
-    margin-top : 20px;
   }
 
   // .item-product__footer
   &__footer {
     display         : flex;
+    align-items     : center;
     justify-content : space-between;
     margin-top      : 15px;
   }
@@ -279,16 +281,16 @@
 
   // .item-product-list__name
   &__name {
-    font-size   : 15px;
-    font-weight : bold;
-    color: #000;
-    text-decoration: none;
+    font-size       : 15px;
+    font-weight     : bold;
+    text-decoration : none;
+    color           : #000;
 
   }
 
   // .item-product-list__props
   &__props {
-    margin-top: 5px;
+    margin-top : 5px;
   }
 
   // .item-product-list__prices
@@ -324,7 +326,6 @@
   font-size   : 13px;
   line-height : 16px;
   color       : #54585d;
-
 
 
   // .props-item-product-list__item

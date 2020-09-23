@@ -1,0 +1,27 @@
+.pagination-block {
+  display : flex;
+  align-items : center;
+  justify-content : center;
+  margin-top: -22px;
+
+  // .pagination-block__item
+  &__item {
+    padding : 7px 5px 5px;
+    text-decoration : none;
+    color: #54585D;
+    line-height : 1;
+    margin : 0 3px;
+
+    // .pagination-block__item--left
+    &--left {
+    }
+    // .pagination-block__item--current
+    &--current {
+      background-color: #005693;
+      color : #fff;
+    }
+    // .pagination-block__item--right
+    &--right {
+    }
+  }
+}
