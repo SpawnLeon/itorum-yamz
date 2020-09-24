@@ -35,7 +35,9 @@
 
   // .main-page__filter
   &__filter {
-    margin-top : 60px;
+    position : relative;
+    top      : -390px;
+    height   : 0;
   }
 
 }
@@ -346,6 +348,10 @@
 
 .main-page-filter {
 
+  // .main-page-filter__inner
+  &__inner {
+    margin-top : 25px;
+  }
 
   // .main-page-filter__title
   &__title {
@@ -354,7 +360,7 @@
     line-height    : 1.25;
     text-align     : center;
     text-transform : uppercase;
-    color          : #222325;
+    color          : #fff;
   }
 
   // .main-page-filter__form
@@ -365,6 +371,10 @@
   &__btn {
     padding : 19px 75px;
 
+    &:hover {
+      background-color : #034c80;
+      color : #fff;
+    }
 
   }
 }
@@ -379,17 +389,17 @@
   &__col {
     // .form-main-page-filter__col--model
     &--model {
-      flex-basis: 305px;
+      flex-basis : 305px;
     }
 
     // .form-main-page-filter__col--date
     &--date {
-      flex-basis: 196px;
+      flex-basis : 196px;
     }
 
     // .form-main-page-filter__col--number
     &--number {
-      flex-basis: 305px;
+      flex-basis : 305px;
     }
   }
 }

@@ -62,6 +62,11 @@ a {
   margin    : 0 auto;
   padding   : 0 15px;
 
+  // .container--main-page
+  &--main-page {
+    position : relative;
+    z-index : 1;
+  }
 
 }
 

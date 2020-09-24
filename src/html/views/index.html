@@ -5,7 +5,7 @@ pageClasses: 'page--front',
 }; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
 <%= _.template(require('./../includes/main-slider.html').default)(data) %>
-<div class="container">
+<div class="container container--main-page">
 
   <div class="main-page__filter main-page-filter">
     <div class="main-page-filter__title">Найдите запасные части для двигателей ямз</div>
@@ -57,7 +57,7 @@ pageClasses: 'page--front',
                       </label>
                     </div>
                   </div>
-                  <div class="form__col form__col--3">
+                  <div class="form__col">
                     <div class="form__item item-form">
                       <button type="button"
                               class="main-page-filter__btn btn btn--fill">
