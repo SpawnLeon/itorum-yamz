@@ -28,12 +28,11 @@ input:-webkit-autofill {
 
   // .form__item
   &__item {
-    margin : 35px 0;
+    margin : 25px 0;
   }
 
   // .form__footer
   &__footer {
-    margin-top : -20px;
 
     // .form__footer--modal
     &--modal {
@@ -117,9 +116,17 @@ input:-webkit-autofill {
 .item-form {
   position : relative;
 
+  // .item-form--agree
+  &--agree {
+    color : #fff;
+
+    > a {
+      color : #fff;
+    }
+  }
+
   // .item-form__label
   &__label {
-
 
 
     // .item-form__label--text
@@ -155,7 +162,7 @@ input:-webkit-autofill {
       line-height      : 1.2307;
 
       width            : 100%;
-      padding          : 20px 20px;
+      padding          : 29px 20px 11px;
       border-radius    : 10px;
       background-color : #f4f4f4;
     }
@@ -249,12 +256,13 @@ input:-webkit-autofill {
 
     // .item-form__name--text
     &--text {
-      position: absolute;
-      top: 18px;
-      left: 20px;
-      transition: top 0.2s;
-      font-size: 13px;
-      line-height: 1.2307;
+      font-size        : 13px;
+      line-height      : 1.2307;
+      position         : absolute;
+      top              : 20px;
+      left             : 20px;
+      transition       : all 0.3s;
+      transform-origin : 0 0;
     }
 
     // .item-form__name--radio
@@ -263,9 +271,13 @@ input:-webkit-autofill {
       vertical-align : middle;
     }
 
-
+    // .item-form__name--focus
     &--focus {
-      top : -20px;
+      top        : 13px;
+      left       : 20px;
+      transform  : scale(.8);
+      text-align : left;
+
     }
 
     // .item-form__name--checkbox

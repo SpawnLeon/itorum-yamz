@@ -1,0 +1,748 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+
+  <title>Document</title>
+
+<link href="./css/style.bundle.css" rel="stylesheet"></head>
+<body>
+<div class="page ">
+  <div class="container">
+    <header class="header">
+
+      <div class="header__content ">
+        <div class="header__row header__row--top">
+          <a href="index.html"
+             class="header__logo logo">
+
+            <button type="button"
+                    class="header__logo-btn logo-btn">
+              <svg
+                class="logo-btn__icon"
+                width="9"
+                height="10">
+                <use xlink:href="img/spritemap.svg#sprite-burger"></use>
+              </svg>
+            </button>
+            <svg
+              width="99"
+              height="23"
+              class="logo__image logo__image--header">
+              <use xlink:href="img/spritemap.svg#sprite-header-logo"></use>
+            </svg>
+          </a>
+          <div class="header__search">
+            <form action=""
+                  class="header__search search-block">
+              <label class="search-block__label">
+                <input class="search-block__field"
+                       type="text"
+                       placeholder="Поиск изделия по наименованию, назначению, S/N">
+              </label>
+              <button class="search-block__btn"
+                      type="submit"
+                      value="Поиск">
+                <svg width="14"
+                     height="15">
+                  <use xlink:href="img/spritemap.svg#sprite-search"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+          <div class="header__city">
+            Петропавловск-Камчатский
+            <svg
+              width="6"
+              height="4">
+              <use xlink:href="img/spritemap.svg#sprite-city"></use>
+            </svg>
+          </div>
+          <div class="header__phones">
+            <a href="tel:+74852587878"
+               class="header__phone">+7 (4852) 58-78-78</a>
+          </div>
+        </div>
+
+        <div class="header__row header__row--middle middle-header">
+          <div class="middle-header__container container">
+            <nav class="header__nav">
+              <ul class="header__catalog catalog-menu list--clear">
+                <li class="catalog-menu__item">
+                  <a href="catalog.html"
+                     class="catalog-menu__link">
+                    <svg width="9"
+                         height="10">
+                      <use xlink:href="img/spritemap.svg#sprite-burger"></use>
+                    </svg>
+                    Каталог
+                  </a>
+                  <ul class="catalog-menu__submenu header-catalog-submenu list--clear">
+                    <li class="header-catalog-submenu__item">
+                      <a href="catalog.html"
+                         class="header-catalog-submenu__link">
+                        Двигатели
+                      </a>
+                    </li>
+                    <li class="header-catalog-submenu__item">
+                      <a href="catalog.html"
+                         class="header-catalog-submenu__link">
+                        Коробки передач
+                      </a>
+                    </li>
+                    <li class="header-catalog-submenu__item">
+                      <a href="catalog.html"
+                         class="header-catalog-submenu__link">
+                        Сцепление
+                      </a>
+                    </li>
+                    <li class="header-catalog-submenu__item">
+                      <a href="catalog.html"
+                         class="header-catalog-submenu__link">
+                        Генераторные установки
+                      </a>
+                    </li>
+                    <li class="header-catalog-submenu__item">
+                      <a href="catalog.html"
+                         class="header-catalog-submenu__link">
+                        Запасные части
+                      </a>
+                    </li>
+                    <li class="header-catalog-submenu__item">
+                      <a href="catalog.html"
+                         class="header-catalog-submenu__link">
+                        ТНВД
+                      </a>
+                    </li>
+                    <li class="header-catalog-submenu__item">
+                      <a href="catalog.html"
+                         class="header-catalog-submenu__link">
+                        Инструменты и принадлежности
+                      </a>
+                    </li>
+                    <li class="header-catalog-submenu__item">
+                      <a href="catalog.html"
+                         class="header-catalog-submenu__link">
+                        Резинотехнические изделия
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="catalog-menu__item">
+                  <a href="catalog.html"
+                     class="catalog-menu__link">
+                    Оплата
+                  </a>
+                </li>
+                <li class="catalog-menu__item">
+                  <a href="catalog.html"
+                     class="catalog-menu__link">
+                    Доставка
+                  </a>
+                </li>
+                <li class="catalog-menu__item">
+                  <a href="catalog.html"
+                     class="catalog-menu__link">
+                    Гарантия
+                  </a>
+                </li>
+                <li class="catalog-menu__item">
+                  <a href="catalog.html"
+                     class="catalog-menu__link">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+
+            <div class="header__personal personal-block-header">
+              <a href=""
+                 class="personal-block-header__link personal-block-header__link--auth">
+                Вход
+              </a>
+              /
+              <a href=""
+                 class="personal-block-header__link personal-block-header__link--favorite">
+                Регистрация
+              </a>
+            </div>
+
+            <a href=""
+               class="header__basket basket-block">
+              <div class="basket-block__title">Корзина</div>
+              <div class="basket-block__count">5</div>
+              <div class="basket-block__total">15 256 ₽</div>
+            </a>
+          </div>
+
+
+        </div>
+      </div>
+    </header>
+  </div>
+
+
+  <div class="page-content">
+    <!--    <div class="container">  -->
+
+
+
+<div class="container">
+  <div class="container__inner">
+
+    <ul class="breadcrumbs list--clear"
+    itemscope
+    itemtype="http://schema.org/BreadcrumbList">
+  <li class="breadcrumbs__item"
+      itemprop="itemListElement"
+      itemscope
+      itemtype="http://schema.org/ListItem">
+    <a href=""
+       class="breadcrumbs__link"
+       itemprop="item">
+      <span itemprop="name">Главная</span>
+    </a>
+    <meta itemprop="position"
+          content="1" />
+  </li>
+  <li class="breadcrumbs__item"
+      itemprop="itemListElement"
+      itemscope
+      itemtype="http://schema.org/ListItem">
+    <span class="breadcrumbs__delimiter"></span>
+    <a href=""
+       class="breadcrumbs__link"
+       itemprop="item">
+      <span itemprop="name">Запасные части</span>
+    </a>
+    <meta itemprop="position"
+          content="2" />
+  </li>
+  <li class="breadcrumbs__item"
+      itemprop="itemListElement"
+      itemscope
+      itemtype="http://schema.org/ListItem">
+    <span class="breadcrumbs__delimiter"></span>
+    <a href=""
+       class="breadcrumbs__link"
+       itemprop="item">
+      <span itemprop="name">Запчасти двигателя</span>
+    </a>
+    <meta itemprop="position"
+          content="3" />
+  </li>
+
+
+</ul>
+
+    <h1 class="page-content__title">Контакты</h1>
+
+    <div class="page-content__contacts contacts-page">
+
+      <div class="contacts-page__inner">
+        <div class="contacts-page__panel panel-contacts panel-contacts--left">
+          <div class="panel-contacts__title">ООО "ОМГ-Сервис"</div>
+          <div class="panel-contacts__inner">
+            <!--Интернет-магазин-->
+            <div class="contacts-page__block contacts-block">
+              <div class="contacts-block__title">
+                Интернет-магазин
+              </div>
+              <div class="contacts-block__inner">
+
+                <div class="contacts-block__item contact-item">
+                  <div class="contact-item__image">
+                    <img src="uploads/contacts/2.jpg"
+                         alt="">
+                  </div>
+                  <div class="contact-item__inner">
+
+                    <div class="contact-item__title">Сидорова Анастасия Михайловна</div>
+                    <div class="contacts-block__text">
+                      <div class="contacts-block__post">
+                        Ведущий специалист интернет-магазина
+                      </div>
+                      тел. (3513) 55-53-11, <br>
+                      SidorovaAM@uralaz.ru
+                    </div>
+                  </div>
+                </div>
+
+                <div class="contacts-block__item contact-item">
+                  <div class="contact-item__image">
+                    <img src="uploads/contacts/1.png"
+                         alt="">
+                  </div>
+                  <div class="contact-item__inner">
+
+                    <div class="contact-item__title">ФИО</div>
+                    <div class="contacts-block__text">
+                      <div class="contacts-block__post">
+                        Специалист интернет-магазина
+                      </div>
+                      тел. (3513) 55-53-11, <br>
+                      ФИО@uralaz.ru
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+
+            </div>
+
+            <!--Фирменный магазин УРАЛ-->
+            <div class="contacts-page__block contacts-block">
+              <div class="contacts-block__title">
+                Фирменный магазин УРАЛ
+              </div>
+              <div class="contacts-block__inner">
+
+                <div class="contacts-block__item contact-item">
+                  <div class="contact-item__image">
+                    <img src="uploads/contacts/1.png"
+                         alt="">
+                  </div>
+                  <div class="contact-item__inner">
+
+                    <div class="contact-item__title">ФИО</div>
+                    <div class="contacts-block__text">
+                      <div class="contacts-block__post">
+                        Главный специалист
+                      </div>
+                      тел. (3513) 55-53-11, <br>
+                      ФИО@uralaz.ru
+                    </div>
+                  </div>
+                </div>
+
+                <div class="contacts-block__item contact-item">
+                  <div class="contact-item__image">
+                    <img src="uploads/contacts/1.png"
+                         alt="">
+                  </div>
+                  <div class="contact-item__inner">
+
+                    <div class="contact-item__title">ФИО</div>
+                    <div class="contacts-block__text">
+                      <div class="contacts-block__post">
+                        Ведущий специалист
+                      </div>
+                      тел. (3513) 55-53-11, <br>
+                      ФИО@uralaz.ru
+                    </div>
+                  </div>
+                </div>
+
+                <div class="contacts-block__item contact-item">
+                  <div class="contact-item__image">
+                    <img src="uploads/contacts/1.png"
+                         alt="">
+                  </div>
+                  <div class="contact-item__inner">
+
+                    <div class="contact-item__title">ФИО</div>
+                    <div class="contacts-block__text">
+                      <div class="contacts-block__post">
+                        Ведущий специалист
+                      </div>
+                      тел. (3513) 55-53-11, <br>
+                      ФИО@uralaz.ru
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!--Начальник отдела розничных продаж-->
+            <div class="contacts-page__block contacts-block">
+              <div class="contacts-block__title">
+                Начальник отдела розничных продаж
+              </div>
+              <div class="contacts-block__inner">
+
+                <div class="contacts-block__item contact-item">
+                  <div class="contact-item__image">
+                    <img src="uploads/contacts/3.jpg"
+                         alt="">
+                  </div>
+                  <div class="contact-item__inner">
+
+                    <div class="contact-item__title">Прусаков Алексей Александрович</div>
+                    <div class="contacts-block__text">
+
+                      тел. (3513) 55-53-11, <br>
+                      PrusakovAA@uralaz.ru
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+
+            </div>
+
+            <!--Отдел оптовых продаж-->
+            <div class="contacts-page__block contacts-block">
+              <div class="contacts-block__title">
+                Отдел оптовых продаж
+              </div>
+              <div class="contacts-block__inner">
+
+                <div class="contacts-block__item contact-item">
+                  <div class="contact-item__image">
+                    <img src="uploads/contacts/1.png"
+                         alt="">
+                  </div>
+                  <div class="contact-item__inner">
+
+                    <div class="contact-item__title">Чикин Роман Васильевич</div>
+                    <div class="contacts-block__text">
+                      <div class="contacts-block__post">
+                        Главный специалист
+                      </div>
+                      тел. (3513) 55-53-11, <br>
+                      ChikinRV@uralaz.ru
+                    </div>
+                  </div>
+                </div>
+
+                <div class="contacts-block__item contact-item">
+                  <div class="contact-item__image">
+                    <img src="uploads/contacts/5.jpg"
+                         alt="">
+                  </div>
+                  <div class="contact-item__inner">
+
+                    <div class="contact-item__title">Березин Андрей Иванович</div>
+                    <div class="contacts-block__text">
+                      <div class="contacts-block__post">
+                        Ведущий специалист
+                      </div>
+                      тел. (3513) 55-53-11, <br>
+                      BerezinAI@uralaz.ru
+                    </div>
+                  </div>
+                </div>
+
+                <div class="contacts-block__item contact-item">
+                  <div class="contact-item__image">
+                    <img src="uploads/contacts/1.png"
+                         alt="">
+                  </div>
+                  <div class="contact-item__inner">
+
+                    <div class="contact-item__title">ФИО</div>
+                    <div class="contacts-block__text">
+                      <div class="contacts-block__post">
+                        Ведущий специалист
+                      </div>
+                      тел. (3513) 55-53-11, <br>
+                      ФИО@uralaz.ru
+                    </div>
+                  </div>
+                </div>
+
+                <div class="contacts-block__item contact-item">
+                  <div class="contact-item__image">
+                    <img src="uploads/contacts/1.png"
+                         alt="">
+                  </div>
+                  <div class="contact-item__inner">
+
+                    <div class="contact-item__title">ФИО</div>
+                    <div class="contacts-block__text">
+                      <div class="contacts-block__post">
+                        Ведущий специалист
+                      </div>
+                      тел. (3513) 55-53-11, <br>
+                      ФИО@uralaz.ru
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!--Начальник отдела оптовых продаж-->
+            <div class="contacts-page__block contacts-block">
+              <div class="contacts-block__title">
+                Начальник отдела оптовых продаж
+              </div>
+              <div class="contacts-block__inner">
+
+                <div class="contacts-block__item contact-item">
+                  <div class="contact-item__image">
+                    <img src="uploads/contacts/1.png"
+                         alt="">
+                  </div>
+                  <div class="contact-item__inner">
+
+                    <div class="contact-item__title">ФИО</div>
+                    <div class="contacts-block__text">
+                      ФИО@uralaz.ru, <br>
+                      SidorovaAM@uralaz.ru
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+
+            </div>
+
+            <!--Начальник управления продаж запасных частей-->
+            <div class="contacts-page__block contacts-block">
+              <div class="contacts-block__title">
+                Начальник управления продаж запасных частей
+              </div>
+              <div class="contacts-block__inner">
+
+                <div class="contacts-block__item contact-item">
+                  <div class="contact-item__image">
+                    <img src="uploads/contacts/4.jpg"
+                         alt="">
+                  </div>
+                  <div class="contact-item__inner">
+
+                    <div class="contact-item__title">Радостев Александр Викторович</div>
+                    <div class="contacts-block__text">
+                      RadostevAV@uralaz.ru <br>
+                      тел. (3513) 55-40-41
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="contacts-page__panel panel-contacts panel-contacts--right">
+          <div class="panel-contacts__title">АО "АЗ "УРАЛ"</div>
+          <div class="panel-contacts__inner">
+            <div class="contacts-page__ural ural-contact">
+              <a href=""
+                 class="ural-contact__link">www.uralaz.ru
+              </a>
+              <div class="ural-contact__item">
+                456300, г.Миасс, пр. Автозаводцев, 1 <br>
+                Тел. +7 (3513) 55-16-37
+              </div>
+              <div class="ural-contact__item">
+                Круглосуточная горячая линия <br>
+                8-800-100-11-74 <br>
+                Звонок по России бесплатный
+              </div>
+              <div class="ural-contact__item">
+                Справочная "АЗ "УРАЛ" <br>
+                Тел. +7(3513) 55-49-83
+
+              </div>
+            </div>
+            <div class="contacts-page__form form-contacts">
+              <div class="form-contacts__title">
+                Напишите нам
+              </div>
+              <form class="form form--contact"
+                    action="">
+
+
+                <div class="form__inner">
+
+
+                  <div class="form__content">
+
+
+                    <div class="form__group group-form">
+
+                      <div class="form__row">
+                        <div class="form__col form__col--6">
+                          <div class="form__item item-form">
+                            <label class="item-form__label item-form__label--text">
+                              <input
+
+                                type="text"
+                                class="item-form__field item-form__field--text">
+                              <span class="item-form__name  item-form__name--text">Ваше имя</span>
+                            </label>
+                          </div>
+                        </div>
+
+                        <div class="form__col form__col--6">
+                          <div class="form__item item-form">
+                            <label class="item-form__label item-form__label--text">
+                              <input
+
+                                type="text"
+                                class="item-form__field item-form__field--text">
+                              <span class="item-form__name  item-form__name--text">E-mail</span>
+                            </label>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="form__row">
+                        <div class="form__col form__col--12">
+
+
+                          <div class="form__item item-form">
+                            <label class="item-form__label item-form__label--text">
+
+                              <textarea rows="3"
+                                        class="item-form__field item-form__field--text item-form__field--textarea"></textarea>
+                              <span class="item-form__name item-form__name--text">Ваш вопрос</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form__item item-form"
+                           style="margin-top: 0;">
+                        <label class="item-form__label item-form__label--checkbox">
+                          <input
+                            type="checkbox"
+                            name=""
+                            checked
+                            value=""
+                            class="item-form__field item-form__field--checkbox">
+                          <span class="item-form__picture item-form__picture--checkbox">
+
+                  <svg width="12"
+                       height="8"
+                       fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.026 2.573a.98.98 0 000-1.424 1.08 1.08 0 00-1.483 0L5.09 5.423l-2.968-2.85a1.08 1.08 0 00-1.484 0 .98.98 0 000 1.424L4.348 7.56c.205.197.474.295.743.295.27 0 .538-.099.743-.295l5.192-4.986z"
+                      fill="#fff"/>
+                  </svg>
+                </span>
+                          <span class="item-form__name item-form__name--checkbox">
+                  Я согласен с условиями
+                  <a target="_blank"
+                     rel="noopener noreferrer"
+                     href="privacy.html">политики&nbsp;конфиденциальности</a>
+                </span>
+                        </label>
+                      </div>
+                    </div>
+
+
+                  </div>
+
+                  <footer class="form__footer">
+                    <div class="form__actions">
+                      <button class="form__btn btn btn--orange btn--fill"
+                              type="submit">Отправить
+                      </button>
+                    </div>
+                  </footer>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+
+
+</div>
+
+<!--</div>  вынести из страниц в header  и footer  -->
+
+<!-- /.page-content -->
+
+</div> <!-- end .page -->
+<footer class="page__footer footer">
+  <div class="container">
+    <div class="footer__top">
+
+
+      <a href="index.html"
+         class="footer__logo logo">
+        <svg
+          width="134"
+          height="31">
+          <use xlink:href="img/spritemap.svg#sprite-footer-logo"></use>
+        </svg>
+      </a>
+
+
+      <div class="footer__menus">
+        <nav class="footer__nav">
+
+          <ul class="footer__main-menu bottom-menu list--clear">
+            <li class="bottom-menu__item">
+              <a href="/"
+                 class="bottom-menu__link">Каталог</a></li>
+            <li class="bottom-menu__item">
+              <a href="delivery.html"
+                 class="bottom-menu__link">Оплата</a></li>
+            <li class="bottom-menu__item">
+              <a href=""
+                 class="bottom-menu__link">Доставка</a></li>
+            <li class="bottom-menu__item">
+              <a href="warranty.html"
+                 class="bottom-menu__link">Гарантия</a></li>
+            <li class="bottom-menu__item">
+              <a href="payment.html"
+                 class="bottom-menu__link">Контакты</a></li>
+          </ul>
+
+        </nav>
+      </div>
+
+
+      <div class="footer__phones">
+        <a href="tel:+74852587878"
+           class="footer__phone">+7 (4852) 58-78-78</a>
+      </div>
+
+
+    </div>
+
+
+    <div class="footer__bottom">
+      <div class="footer__law law-block">
+
+        <a href="privacy.html"
+           class="law-block__item">Политика в обработке персональных данных</a>
+      </div>
+      <div class="footer__year">
+        &copy;2020
+      </div>
+      <div class="footer__dev">
+        Разработка сайта
+        <a target="_blank"
+           rel="noopener noreferrer"
+           href="https://itorum.ru">Иторум</a>
+      </div>
+
+    </div>
+  </div>
+
+</footer>
+
+
+<script type="text/javascript" src="./js/bundle.js"></script></body>
+
+</html>
+

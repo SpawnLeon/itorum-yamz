@@ -1,0 +1,382 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+
+  <title>Document</title>
+
+<link href="./css/style.bundle.css" rel="stylesheet"></head>
+<body>
+<div class="page ">
+  <div class="container">
+    <header class="header">
+
+      <div class="header__content ">
+        <div class="header__row header__row--top">
+          <a href="index.html"
+             class="header__logo logo">
+
+            <button type="button"
+                    class="header__logo-btn logo-btn">
+              <svg
+                class="logo-btn__icon"
+                width="9"
+                height="10">
+                <use xlink:href="img/spritemap.svg#sprite-burger"></use>
+              </svg>
+            </button>
+            <svg
+              width="99"
+              height="23"
+              class="logo__image logo__image--header">
+              <use xlink:href="img/spritemap.svg#sprite-header-logo"></use>
+            </svg>
+          </a>
+          <div class="header__search">
+            <form action=""
+                  class="header__search search-block">
+              <label class="search-block__label">
+                <input class="search-block__field"
+                       type="text"
+                       placeholder="Поиск изделия по наименованию, назначению, S/N">
+              </label>
+              <button class="search-block__btn"
+                      type="submit"
+                      value="Поиск">
+                <svg width="14"
+                     height="15">
+                  <use xlink:href="img/spritemap.svg#sprite-search"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+          <div class="header__city">
+            Петропавловск-Камчатский
+            <svg
+              width="6"
+              height="4">
+              <use xlink:href="img/spritemap.svg#sprite-city"></use>
+            </svg>
+          </div>
+          <div class="header__phones">
+            <a href="tel:+74852587878"
+               class="header__phone">+7 (4852) 58-78-78</a>
+          </div>
+        </div>
+
+        <div class="header__row header__row--middle middle-header">
+          <div class="middle-header__container container">
+            <nav class="header__nav">
+              <ul class="header__catalog catalog-menu list--clear">
+                <li class="catalog-menu__item">
+                  <a href="catalog.html"
+                     class="catalog-menu__link">
+                    <svg width="9"
+                         height="10">
+                      <use xlink:href="img/spritemap.svg#sprite-burger"></use>
+                    </svg>
+                    Каталог
+                  </a>
+                  <ul class="catalog-menu__submenu header-catalog-submenu list--clear">
+                    <li class="header-catalog-submenu__item">
+                      <a href="catalog.html"
+                         class="header-catalog-submenu__link">
+                        Двигатели
+                      </a>
+                    </li>
+                    <li class="header-catalog-submenu__item">
+                      <a href="catalog.html"
+                         class="header-catalog-submenu__link">
+                        Коробки передач
+                      </a>
+                    </li>
+                    <li class="header-catalog-submenu__item">
+                      <a href="catalog.html"
+                         class="header-catalog-submenu__link">
+                        Сцепление
+                      </a>
+                    </li>
+                    <li class="header-catalog-submenu__item">
+                      <a href="catalog.html"
+                         class="header-catalog-submenu__link">
+                        Генераторные установки
+                      </a>
+                    </li>
+                    <li class="header-catalog-submenu__item">
+                      <a href="catalog.html"
+                         class="header-catalog-submenu__link">
+                        Запасные части
+                      </a>
+                    </li>
+                    <li class="header-catalog-submenu__item">
+                      <a href="catalog.html"
+                         class="header-catalog-submenu__link">
+                        ТНВД
+                      </a>
+                    </li>
+                    <li class="header-catalog-submenu__item">
+                      <a href="catalog.html"
+                         class="header-catalog-submenu__link">
+                        Инструменты и принадлежности
+                      </a>
+                    </li>
+                    <li class="header-catalog-submenu__item">
+                      <a href="catalog.html"
+                         class="header-catalog-submenu__link">
+                        Резинотехнические изделия
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="catalog-menu__item">
+                  <a href="catalog.html"
+                     class="catalog-menu__link">
+                    Оплата
+                  </a>
+                </li>
+                <li class="catalog-menu__item">
+                  <a href="catalog.html"
+                     class="catalog-menu__link">
+                    Доставка
+                  </a>
+                </li>
+                <li class="catalog-menu__item">
+                  <a href="catalog.html"
+                     class="catalog-menu__link">
+                    Гарантия
+                  </a>
+                </li>
+                <li class="catalog-menu__item">
+                  <a href="catalog.html"
+                     class="catalog-menu__link">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+
+            <div class="header__personal personal-block-header">
+              <a href=""
+                 class="personal-block-header__link personal-block-header__link--auth">
+                Вход
+              </a>
+              /
+              <a href=""
+                 class="personal-block-header__link personal-block-header__link--favorite">
+                Регистрация
+              </a>
+            </div>
+
+            <a href=""
+               class="header__basket basket-block">
+              <div class="basket-block__title">Корзина</div>
+              <div class="basket-block__count">5</div>
+              <div class="basket-block__total">15 256 ₽</div>
+            </a>
+          </div>
+
+
+        </div>
+      </div>
+    </header>
+  </div>
+
+
+  <div class="page-content">
+    <!--    <div class="container">  -->
+
+
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=adcbc647-465e-457a-883c-86b24d6f99d0"
+        type="text/javascript"></script>
+<div class="container">
+  <div class="container__inner">
+
+    <ul class="breadcrumbs list--clear"
+    itemscope
+    itemtype="http://schema.org/BreadcrumbList">
+  <li class="breadcrumbs__item"
+      itemprop="itemListElement"
+      itemscope
+      itemtype="http://schema.org/ListItem">
+    <a href=""
+       class="breadcrumbs__link"
+       itemprop="item">
+      <span itemprop="name">Главная</span>
+    </a>
+    <meta itemprop="position"
+          content="1" />
+  </li>
+  <li class="breadcrumbs__item"
+      itemprop="itemListElement"
+      itemscope
+      itemtype="http://schema.org/ListItem">
+    <span class="breadcrumbs__delimiter"></span>
+    <a href=""
+       class="breadcrumbs__link"
+       itemprop="item">
+      <span itemprop="name">Запасные части</span>
+    </a>
+    <meta itemprop="position"
+          content="2" />
+  </li>
+  <li class="breadcrumbs__item"
+      itemprop="itemListElement"
+      itemscope
+      itemtype="http://schema.org/ListItem">
+    <span class="breadcrumbs__delimiter"></span>
+    <a href=""
+       class="breadcrumbs__link"
+       itemprop="item">
+      <span itemprop="name">Запчасти двигателя</span>
+    </a>
+    <meta itemprop="position"
+          content="3" />
+  </li>
+
+
+</ul>
+
+    <h1 class="page-content__title">О компании</h1>
+
+    <div class="page-content__about about-page">
+
+      <div class="about-page__inner">
+        <div class="about-page__panel panel-about panel-about--left">
+          <div class="about-page__image about-image">
+            <img src="uploads/about/1.jpg"
+                 alt="">
+          </div>
+          <div class="about-page__map about-map"
+               id="about-map"
+               style=" height   : 570px;">
+          </div>
+        </div>
+
+        <div class="about-page__panel panel-about panel-about--right">
+          <div class="about-page__text about-text">
+            <p>ООО “ОМГ-Сервис” – единственный эксклюзивный дистрибьютор АО “АЗ “УРАЛ” по продаже запасных частей к
+              автомобилям марки УРАЛ, имеет права по формированию и аттестации товаропроводящей сети на территории РФ и
+              стран СНГ. </p>
+            <p>Основное направление деятельности ООО “ОМГ-Сервис” – техническое обслуживание и ремонт автомобилей УРАЛ,
+              а также своевременное обеспечение потребителей техники УРАЛ оригинальными запасными частями и
+              предоставление качественных сервисных услуг.
+            </p>
+          </div>
+
+          <div class="about-page__mission about-mission">
+            <img src="uploads/about/2.jpg"
+                 alt="">
+          </div>
+
+          <div class="about-page__contacts about-contacts">
+            <p>
+              По вопросам приобретения запасных частей и другим вопросам: <br>
+              Тел. 8 (3513) 55-53-11, 55-53-77 <br>
+              Пн-Пт (10:00-18:00)
+            </p>
+            <p>
+              E-mail: <a href="mailto:sales@umg.ru">sales@umg.ru </a>
+            </p>
+            <p>
+              По вопросам и замечаниям на качество обращайтесь в Службу клиентской поддержки:
+              <a href="mailto:support@umg.ru">support@umg.ru</a>
+
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+
+<!--</div>  вынести из страниц в header  и footer  -->
+
+<!-- /.page-content -->
+
+</div> <!-- end .page -->
+<footer class="page__footer footer">
+  <div class="container">
+    <div class="footer__top">
+
+
+      <a href="index.html"
+         class="footer__logo logo">
+        <svg
+          width="134"
+          height="31">
+          <use xlink:href="img/spritemap.svg#sprite-footer-logo"></use>
+        </svg>
+      </a>
+
+
+      <div class="footer__menus">
+        <nav class="footer__nav">
+
+          <ul class="footer__main-menu bottom-menu list--clear">
+            <li class="bottom-menu__item">
+              <a href="/"
+                 class="bottom-menu__link">Каталог</a></li>
+            <li class="bottom-menu__item">
+              <a href="delivery.html"
+                 class="bottom-menu__link">Оплата</a></li>
+            <li class="bottom-menu__item">
+              <a href=""
+                 class="bottom-menu__link">Доставка</a></li>
+            <li class="bottom-menu__item">
+              <a href="warranty.html"
+                 class="bottom-menu__link">Гарантия</a></li>
+            <li class="bottom-menu__item">
+              <a href="payment.html"
+                 class="bottom-menu__link">Контакты</a></li>
+          </ul>
+
+        </nav>
+      </div>
+
+
+      <div class="footer__phones">
+        <a href="tel:+74852587878"
+           class="footer__phone">+7 (4852) 58-78-78</a>
+      </div>
+
+
+    </div>
+
+
+    <div class="footer__bottom">
+      <div class="footer__law law-block">
+
+        <a href="privacy.html"
+           class="law-block__item">Политика в обработке персональных данных</a>
+      </div>
+      <div class="footer__year">
+        &copy;2020
+      </div>
+      <div class="footer__dev">
+        Разработка сайта
+        <a target="_blank"
+           rel="noopener noreferrer"
+           href="https://itorum.ru">Иторум</a>
+      </div>
+
+    </div>
+  </div>
+
+</footer>
+
+
+<script type="text/javascript" src="./js/bundle.js"></script></body>
+
+</html>
+

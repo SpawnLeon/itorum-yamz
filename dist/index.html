@@ -1,0 +1,639 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+
+  <title>Document</title>
+
+<link href="./css/style.bundle.css" rel="stylesheet"></head>
+<body>
+<div class="page page--front">
+  <div class="container">
+    <header class="header">
+
+      <div class="header__content ">
+        <div class="header__row header__row--top">
+          <a href="index.html"
+             class="header__logo logo">
+
+            <button type="button"
+                    class="header__logo-btn logo-btn">
+              <svg
+                class="logo-btn__icon"
+                width="9"
+                height="10">
+                <use xlink:href="img/spritemap.svg#sprite-burger"></use>
+              </svg>
+            </button>
+            <svg
+              width="99"
+              height="23"
+              class="logo__image logo__image--header">
+              <use xlink:href="img/spritemap.svg#sprite-header-logo"></use>
+            </svg>
+          </a>
+          <div class="header__search">
+            <form action=""
+                  class="header__search search-block">
+              <label class="search-block__label">
+                <input class="search-block__field"
+                       type="text"
+                       placeholder="Поиск изделия по наименованию, назначению, S/N">
+              </label>
+              <button class="search-block__btn"
+                      type="submit"
+                      value="Поиск">
+                <svg width="14"
+                     height="15">
+                  <use xlink:href="img/spritemap.svg#sprite-search"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+          <div class="header__city">
+            Петропавловск-Камчатский
+            <svg
+              width="6"
+              height="4">
+              <use xlink:href="img/spritemap.svg#sprite-city"></use>
+            </svg>
+          </div>
+          <div class="header__phones">
+            <a href="tel:+74852587878"
+               class="header__phone">+7 (4852) 58-78-78</a>
+          </div>
+        </div>
+
+        <div class="header__row header__row--middle middle-header">
+          <div class="middle-header__container container">
+            <nav class="header__nav">
+              <ul class="header__catalog catalog-menu list--clear">
+                <li class="catalog-menu__item">
+                  <a href="catalog.html"
+                     class="catalog-menu__link">
+                    <svg width="9"
+                         height="10">
+                      <use xlink:href="img/spritemap.svg#sprite-burger"></use>
+                    </svg>
+                    Каталог
+                  </a>
+                  <ul class="catalog-menu__submenu header-catalog-submenu list--clear">
+                    <li class="header-catalog-submenu__item">
+                      <a href="catalog.html"
+                         class="header-catalog-submenu__link">
+                        Двигатели
+                      </a>
+                    </li>
+                    <li class="header-catalog-submenu__item">
+                      <a href="catalog.html"
+                         class="header-catalog-submenu__link">
+                        Коробки передач
+                      </a>
+                    </li>
+                    <li class="header-catalog-submenu__item">
+                      <a href="catalog.html"
+                         class="header-catalog-submenu__link">
+                        Сцепление
+                      </a>
+                    </li>
+                    <li class="header-catalog-submenu__item">
+                      <a href="catalog.html"
+                         class="header-catalog-submenu__link">
+                        Генераторные установки
+                      </a>
+                    </li>
+                    <li class="header-catalog-submenu__item">
+                      <a href="catalog.html"
+                         class="header-catalog-submenu__link">
+                        Запасные части
+                      </a>
+                    </li>
+                    <li class="header-catalog-submenu__item">
+                      <a href="catalog.html"
+                         class="header-catalog-submenu__link">
+                        ТНВД
+                      </a>
+                    </li>
+                    <li class="header-catalog-submenu__item">
+                      <a href="catalog.html"
+                         class="header-catalog-submenu__link">
+                        Инструменты и принадлежности
+                      </a>
+                    </li>
+                    <li class="header-catalog-submenu__item">
+                      <a href="catalog.html"
+                         class="header-catalog-submenu__link">
+                        Резинотехнические изделия
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="catalog-menu__item">
+                  <a href="catalog.html"
+                     class="catalog-menu__link">
+                    Оплата
+                  </a>
+                </li>
+                <li class="catalog-menu__item">
+                  <a href="catalog.html"
+                     class="catalog-menu__link">
+                    Доставка
+                  </a>
+                </li>
+                <li class="catalog-menu__item">
+                  <a href="catalog.html"
+                     class="catalog-menu__link">
+                    Гарантия
+                  </a>
+                </li>
+                <li class="catalog-menu__item">
+                  <a href="catalog.html"
+                     class="catalog-menu__link">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+
+            <div class="header__personal personal-block-header">
+              <a href=""
+                 class="personal-block-header__link personal-block-header__link--auth">
+                Вход
+              </a>
+              /
+              <a href=""
+                 class="personal-block-header__link personal-block-header__link--favorite">
+                Регистрация
+              </a>
+            </div>
+
+            <a href=""
+               class="header__basket basket-block">
+              <div class="basket-block__title">Корзина</div>
+              <div class="basket-block__count">5</div>
+              <div class="basket-block__total">15 256 ₽</div>
+            </a>
+          </div>
+
+
+        </div>
+      </div>
+    </header>
+  </div>
+
+
+  <div class="page-content">
+    <!--    <div class="container">  -->
+
+<div class="header__slider main-slider">
+  <div class="swiper-container main-slider__container">
+    <div class="swiper-wrapper main-slider__wrapper">
+      <div class="swiper-slide main-slider__slide main-slide">
+        <div class="container main-slide__container">
+          <div class="main-slide__content">
+            <div class="main-slide__title"> </div>
+          </div>
+        </div>
+        <div class="main-slide__bg"
+             style="background-image: url(uploads/main-slider/1.jpg);"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="main-page__filter main-page-filter">
+    <div class="main-page-filter__title">Найдите запасные части для двигателей ямз</div>
+    <div class="main-page-filter__inner">
+
+
+      <div class="main-page-filter__form form-main-page-filter">
+        <form class="form "
+              action="">
+
+          <div class="form__inner">
+
+
+            <div class="form__content">
+
+
+              <div class="form__group group-form">
+
+                <div class="form__row form-main-page-filter__row">
+                  <div class="form__col form-main-page-filter__col form-main-page-filter__col--model">
+                    <div class="form__item item-form">
+                      <label class="item-form__label item-form__label--text">
+                        <input
+
+                          type="text"
+                          class="item-form__field item-form__field--text">
+                        <span class="item-form__name  item-form__name--text">Модель двигателя</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form__col form-main-page-filter__col form-main-page-filter__col--date">
+                    <div class="form__item item-form">
+                      <label class="item-form__label item-form__label--text">
+                        <input
+                          type="text"
+                          class="item-form__field item-form__field--text">
+                        <span class="item-form__name  item-form__name--text">Дата выпуска</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form__col form-main-page-filter__col form-main-page-filter__col--number">
+                    <div class="form__item item-form">
+                      <label class="item-form__label item-form__label--text">
+                        <input
+
+                          type="text"
+                          class="item-form__field item-form__field--text">
+                        <span class="item-form__name  item-form__name--text">Заводской номер</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form__col form__col--3">
+                    <div class="form__item item-form">
+                      <button type="button"
+                              class="main-page-filter__btn btn btn--fill">
+                        Найти
+                      </button>
+                    </div>
+                  </div>
+
+
+                </div>
+
+
+              </div>
+
+
+            </div>
+
+
+          </div>
+        </form>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="main-page__catalog catalog-categories">
+    <div class="catalog-categories__title">
+      Категории
+    </div>
+    <div class="catalog-categories__inner">
+      <a href=""
+         class="catalog-categories__item item-category">
+        <div class="item-category__image">
+          <img src="uploads/item-category/1.png"
+               alt="">
+        </div>
+        <div class="item-category__title">Двигатели</div>
+      </a>
+      <a class="catalog-categories__item item-category">
+        <div class="item-category__image">
+          <img src="uploads/item-category/2.png"
+               alt="">
+        </div>
+        <div class="item-category__title">Коробки передач</div>
+      </a>
+      <a href=""
+         class="catalog-categories__item item-category">
+        <div class="item-category__image">
+          <img src="uploads/item-category/3.png"
+               alt="">
+        </div>
+        <div class="item-category__title">Сцепление</div>
+      </a>
+      <a href=""
+         class="catalog-categories__item item-category">
+        <div class="item-category__image">
+          <img src="uploads/item-category/4.png"
+               alt="">
+        </div>
+        <div class="item-category__title">Генераторные установки</div>
+      </a>
+      <a href=""
+         class="catalog-categories__item item-category">
+        <div class="item-category__image">
+          <img src="uploads/item-category/5.png"
+               alt="">
+        </div>
+        <div class="item-category__title">Запасные части</div>
+      </a>
+      <a href=""
+         class="catalog-categories__item item-category">
+        <div class="item-category__image">
+          <img src="uploads/item-category/6.png"
+               alt="">
+        </div>
+        <div class="item-category__title">ТНВД</div>
+      </a>
+      <a href=""
+         class="catalog-categories__item item-category">
+        <div class="item-category__image">
+          <img src="uploads/item-category/7.png"
+               alt="">
+        </div>
+        <div class="item-category__title">Инструменты и принадлежности</div>
+      </a>
+      <div class="catalog-categories__item item-category">
+        <div class="item-category__image">
+          <img src="uploads/item-category/8.png"
+               alt="">
+        </div>
+        <div class="item-category__title">Резинотехнические изделия</div>
+      </div>
+    </div>
+  </div>
+  <div class="main-page__write-us write-us-block">
+    <div class="container write-us-block__container">
+      <div class="write-us-block__description description-write-us">
+
+        <svg
+          class="description-write-us__icon"
+          width="193"
+          height="193">
+          <use xlink:href="img/spritemap.svg#sprite-write-us"></use>
+        </svg>
+        <div class="description-write-us__title">
+          Мы работаем, потому что ценим Вас
+        </div>
+        <div class="description-write-us__text">
+          <p>
+            Вы всегда можете обратиться за консультацией по любому вопросу в call-center нашего предприятия, который работает
+            <b>c 8:00 до 20:00 7 дней в неделю.</b>
+          </p>
+          <p>
+            Ваше мнение и Ваши отзывы важны для нас, мы стараемся всегда идти Вам навстречу!
+          </p>
+        </div>
+
+      </div>
+      <div class="write-us-block__form form-write-us">
+        <form action="">
+          <div class="form-write-us__title">Напишите нам</div>
+          <div class="form-write-us__inner">
+
+
+            <div class="form__item item-form">
+              <label class="item-form__label item-form__label--text">
+                <input
+                  type="text"
+                  class="item-form__field item-form__field--text">
+                <span class="item-form__name  item-form__name--text">Ваше имя</span>
+              </label>
+            </div>
+            <div class="form__item item-form">
+              <label class="item-form__label item-form__label--text">
+                <input
+                  type="text"
+                  class="item-form__field item-form__field--text">
+                <span class="item-form__name  item-form__name--text">Ваш email</span>
+              </label>
+            </div>
+            <div class="form__item item-form">
+              <label class="item-form__label item-form__label--text">
+                    <textarea class="item-form__field item-form__field--text"
+                              rows="5"></textarea>
+                <span class="item-form__name  item-form__name--text">Сообщение</span>
+              </label>
+            </div>
+            <footer class="form__footer">
+              <div class="form__actions">
+                <button class="form__btn btn form-write-us__btn"
+                        type="submit">ОТПРАВИТЬ
+                </button>
+              </div>
+              <div class="form__item item-form item-form--agree">
+                Нажимая на кнопку «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь c
+                <a target="_blank"
+                   rel="noopener noreferrer"
+                   href="privacy.html">политикой конфиденциальности</a>
+              </div>
+            </footer>
+
+          </div>
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+  <div class="main-page__repair-documentation repair-documentation">
+    <header class="repair-documentation__header">
+      <div class="repair-documentation__title">Эксплуатационная и ремонтная документация</div>
+      <div class="repair-documentation__search search-repair-documentation">
+        <form action="">
+          <div class="search-repair-documentation__inner">
+            <input type="text"
+                   placeholder="Поиск документа"
+                   class="search-repair-documentation__field">
+            <button class="search-repair-documentation__btn btn--clear">
+              <svg
+                width="14"
+                height="15">
+                <use xlink:href="img/spritemap.svg#sprite-search-repair"></use>
+              </svg>
+            </button>
+          </div>
+
+        </form>
+
+      </div>
+    </header>
+    <div class="repair-documentation__inner">
+      <a href=""
+         class="repair-documentation__item item-repair-documentation">
+        <div class="item-repair-documentation__image">
+          <img src="uploads/item-repair-documentation/1.jpg"
+               alt="">
+        </div>
+        <div class="item-repair-documentation__title">
+          Руководство <br>
+          по эксплуатации
+        </div>
+      </a>
+      <a href=""
+         class="repair-documentation__item item-repair-documentation">
+        <div class="item-repair-documentation__image">
+          <img src="uploads/item-repair-documentation/2.jpg"
+               alt="">
+        </div>
+        <div class="item-repair-documentation__title">
+          Руководство <br>
+          по ремонту
+        </div>
+      </a>
+      <a href=""
+         class="repair-documentation__item item-repair-documentation">
+        <div class="item-repair-documentation__image">
+          <img src="uploads/item-repair-documentation/3.jpg"
+               alt="">
+        </div>
+        <div class="item-repair-documentation__title">
+          Каталог <br>
+          изделия
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="main-page__about about-block">
+    <div class="about-block__image">
+      <img src="img/pages/index/about.jpg"
+           alt="">
+    </div>
+    <div class="about-block__content">
+      <h1 class="about-block__title">О магазине</h1>
+      <div class="about-block__text">
+        Ярославский моторный завод – одно из крупнейших российских предприятий, производящих дизельные двигатели многоцелевого назначения, запасные части к ним, коробки передач, сцепления, а также дизель-генераторные установки на базе собственных двигателей.
+      </div>
+    </div>
+  </div>
+  <div class="main-page__advantages advantages-block">
+    <div class="advantages-block__inner">
+      <div class="advantages-block__item item-advantage">
+        <div class="item-advantage__icon">
+          <svg
+            width="76"
+            height="76">
+            <use xlink:href="img/spritemap.svg#sprite-advantage-1"></use>
+          </svg>
+        </div>
+        <div class="item-advantage__title">Чтобы у Вас был выбор</div>
+        <div class="item-advantage__text">
+          В нашем интернет-магазине вы найдете весь ассортимент сборочных единиц и деталей (более 5300 наименований выпускаемой продукции), необходимых для поддержания силового агрегата производства «ЯМЗ» в рабочем состоянии.
+        </div>
+      </div>
+      <div class="advantages-block__item item-advantage">
+        <div class="item-advantage__icon">
+          <svg
+            width="66"
+            height="66">
+            <use xlink:href="img/spritemap.svg#sprite-advantage-2"></use>
+          </svg>
+        </div>
+        <div class="item-advantage__title">Чтобы Вы приобретали только качественные товары</div>
+        <div class="item-advantage__text">
+          Приобретая запасные части в нашем интернет-магазине, вы защищаете себя от контрафакта и можете быть уверены в их качестве и надежности, что позволит Вашему силовому агрегату оставаться работоспособным 24 часа в сутки 365 дней в году.
+        </div>
+      </div>
+      <div class="advantages-block__item item-advantage">
+        <div class="item-advantage__icon">
+          <svg
+            width="97"
+            height="97">
+            <use xlink:href="img/spritemap.svg#sprite-advantage-3"></use>
+          </svg>
+        </div>
+        <div class="item-advantage__title">Чтобы Ваш и покупки были выгодными</div>
+        <div class="item-advantage__text">
+          Мы предлагаем выгодные цены на силовые агрегаты и запчасти к ним, поскольку у нас гибкая ценовая политика, а система скидок – всегда лояльна.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-page__forgery forgery-information">
+    <div class="container forgery-information__inner">
+      <p>
+        Мы понимаем, что, желая сэкономить, некоторые владельцы транспортных средств часто приобретают либо альтернативные, либо неизвестного происхождения запчасти. Такие детали производятся в лучшем случае из дешевого сырья, по упрощенной технологии, а в худшем – из комплектующих, бывших в употреблении.
+      </p>
+      <p>
+        Ярославский моторный завод противодействует распространению на рынке контрафакта и обеспечивает своих потребителей качественным фирменным ремонтом.
+      </p>
+    </div>
+  </div>
+
+
+</div>
+
+<!--</div>  вынести из страниц в header  и footer  -->
+
+<!-- /.page-content -->
+
+</div> <!-- end .page -->
+<footer class="page__footer footer">
+  <div class="container">
+    <div class="footer__top">
+
+
+      <a href="index.html"
+         class="footer__logo logo">
+        <svg
+          width="134"
+          height="31">
+          <use xlink:href="img/spritemap.svg#sprite-footer-logo"></use>
+        </svg>
+      </a>
+
+
+      <div class="footer__menus">
+        <nav class="footer__nav">
+
+          <ul class="footer__main-menu bottom-menu list--clear">
+            <li class="bottom-menu__item">
+              <a href="/"
+                 class="bottom-menu__link">Каталог</a></li>
+            <li class="bottom-menu__item">
+              <a href="delivery.html"
+                 class="bottom-menu__link">Оплата</a></li>
+            <li class="bottom-menu__item">
+              <a href=""
+                 class="bottom-menu__link">Доставка</a></li>
+            <li class="bottom-menu__item">
+              <a href="warranty.html"
+                 class="bottom-menu__link">Гарантия</a></li>
+            <li class="bottom-menu__item">
+              <a href="payment.html"
+                 class="bottom-menu__link">Контакты</a></li>
+          </ul>
+
+        </nav>
+      </div>
+
+
+      <div class="footer__phones">
+        <a href="tel:+74852587878"
+           class="footer__phone">+7 (4852) 58-78-78</a>
+      </div>
+
+
+    </div>
+
+
+    <div class="footer__bottom">
+      <div class="footer__law law-block">
+
+        <a href="privacy.html"
+           class="law-block__item">Политика в обработке персональных данных</a>
+      </div>
+      <div class="footer__year">
+        &copy;2020
+      </div>
+      <div class="footer__dev">
+        Разработка сайта
+        <a target="_blank"
+           rel="noopener noreferrer"
+           href="https://itorum.ru">Иторум</a>
+      </div>
+
+    </div>
+  </div>
+
+</footer>
+
+
+<script type="text/javascript" src="./js/bundle.js"></script></body>
+
+</html>
+

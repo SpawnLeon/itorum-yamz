@@ -107,6 +107,12 @@
   }
 }
 
+.page--front {
+  .header__row--middle {
+    background-color : #fff;
+  }
+}
+
 .middle-header {
   width            : 100vw;
   margin-left      : calc((100vw - #{$desktopWidth} + 30px) / -2);

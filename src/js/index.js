@@ -15,7 +15,19 @@ window.axios = axios;
 import Swiper from 'swiper';
 
 document.addEventListener('DOMContentLoaded', () => {
-
+  Array.from(document.querySelectorAll('.item-form__field--text')).forEach((el, i) => {
+    el.addEventListener('focus', function(event) {
+      this.nextElementSibling.classList.add('item-form__name--focus');
+    });
+    el.addEventListener('blur', function(event) {
+      if (!this.value) {
+        this.nextElementSibling.classList.remove('item-form__name--focus');
+      }
+    });
+    if (el.value) {
+      el.nextElementSibling.classList.add('item-form__name--focus');
+    }
+  });
 });
 
 
