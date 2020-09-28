@@ -14,12 +14,41 @@ title: "Заголовок | Проект",
       <div class="product__inner">
 
         <div class="product__images images-product-wrapper">
+          <div class="images-product">
+            <div class="swiper-container images-product__container">
+              <div class="swiper-wrapper images-product__wrapper">
+                <a href="uploads/product-detail/1.jpg"
+                   class="swiper-slide images-product__slide"
+                   data-fancybox>
+                  <img src="uploads/product/1.png"
+                       alt="">
+                </a>
+                <a href="uploads/product-detail/1.jpg"
+                   class="swiper-slide images-product__slide"
+                   data-fancybox>
+                  <img src="uploads/product/1.png"
+                       alt="">
+                </a>
+                <a href="uploads/product-detail/1.jpg"
+                   class="swiper-slide images-product__slide"
+                   data-fancybox>
+                  <img src="uploads/product/1.png"
+                       alt="">
+                </a>
+                <a href="uploads/product-detail/1.jpg"
+                   class="swiper-slide images-product__slide"
+                   data-fancybox>
+                  <img src="uploads/product/1.png"
+                       alt="">
+                </a>
+              </div>
+            </div>
+          </div>
           <div class="images-product-thumbs">
             <div class="swiper-container images-product-thumbs__container">
               <div class="swiper-wrapper images-product-thumbs__wrapper">
                 <div class="swiper-slide images-product-thumbs__slide">
-                  <a href=""
-                     class="images-product-thumbs__slide-3d">3D</a>
+
                   <img src="uploads/product/1.png"
                        alt="">
                 </div>
@@ -28,6 +57,8 @@ title: "Заголовок | Проект",
                        alt="">
                 </div>
                 <div class="swiper-slide images-product-thumbs__slide">
+                  <a href=""
+                     class="images-product-thumbs__slide-3d">3D</a>
                   <img src="uploads/product/3.png"
                        alt="">
                 </div>
@@ -50,41 +81,11 @@ title: "Заголовок | Проект",
             <button class="swiper-button-next images-product-thumbs__btn btn--clear images-product-thumbs__btn--next">
               <svg
                 class=""
-                width="19"
+                width="8"
                 height="11">
-                <use xlink:href="img/spritemap.svg#sprite-swiper-btn-next"></use>
+                <use xlink:href="img/spritemap.svg#sprite-images-product-thumbs-next"></use>
               </svg>
             </button>
-          </div>
-          <div class="images-product">
-            <div class="swiper-container images-product__container">
-              <div class="swiper-wrapper images-product__wrapper">
-                <a href="uploads/product-detail/1.jpg"
-                   class="swiper-slide images-product__slide"
-                   data-fancybox>
-                  <img src="uploads/product/1.png"
-                       alt="">
-                </a>
-                <a href="uploads/product-detail/1.jpg"
-                   class="swiper-slide images-product__slide"
-                   data-fancybox>
-                  <img src="uploads/product/2.png"
-                       alt="">
-                </a>
-                <a href="uploads/product-detail/1.jpg"
-                   class="swiper-slide images-product__slide"
-                   data-fancybox>
-                  <img src="uploads/product/3.png "
-                       alt="">
-                </a>
-                <a href="uploads/product-detail/1.jpg"
-                   class="swiper-slide images-product__slide"
-                   data-fancybox>
-                  <img src="uploads/product/4.png "
-                       alt="">
-                </a>
-              </div>
-            </div>
           </div>
         </div>
 
@@ -93,73 +94,46 @@ title: "Заголовок | Проект",
 
           <div class="info-product__props props-product">
             <div class="props-product__item item-prop">
-              <span class="item-prop__name">Наименование изделия:</span>
-              <span class="item-prop__value">Колесо дисковое 533-310</span>
+              <span class="item-prop__name">Обозначение</span>
+              <span class="item-prop__value">840.1307010-03</span>
             </div>
             <div class="props-product__item item-prop">
-              <span class="item-prop__name">Обозначение:</span>
-              <span class="item-prop__value">659.3101012-01</span>
+              <span class="item-prop__name">Вес</span>
+              <span class="item-prop__value">18.86 кг</span>
             </div>
-          </div>
-
-
-          <div class="info-product__params params-product">
-            <div class="params-product__item item-param">
-              <span class="item-param__name">Вес:</span>
-              <span class="item-param__value">25 кг</span>
-            </div>
-            <div class="params-product__item item-param">
-              <span class="item-param__name">Габаритные размеры:</span>
-              <span class="item-param__value">25*25*25 см</span>
+            <div class="props-product__item item-prop">
+              <span class="item-prop__name">(Д х Ш х В)</span>
+              <span class="item-prop__value">0.3 x 0.31 x 0.24 м</span>
             </div>
           </div>
 
           <div class="info-product__links">
-            <a href="warranty.html"
-               class="info-product__guarantee">
-              <svg
-                class=""
-                width="28"
-                height="32">
-                <use xlink:href="img/spritemap.svg#sprite-warranty"></use>
-              </svg>
-
-              Гарантийные обязательства
-            </a>
             <a href=""
-               class="info-product__call-manager">
+               class="info-product__catalog">
               <svg
                 class=""
-                width="33"
-                height="22">
-                <use xlink:href="img/spritemap.svg#sprite-letter-orange"></use>
+                width="16"
+                height="19">
+                <use xlink:href="img/spritemap.svg#sprite-info-product-catalog"></use>
               </svg>
-              Связаться с менеджером
+              Каталог изделия
             </a>
           </div>
 
           <div class="info-product__stock-availability stock-availability">
-            Наличие на складе: <span class="stock-availability__qty stock-availability__qty--many">много</span>
+            Наличие на складе <span class="stock-availability__qty stock-availability__qty--many">много</span>
           </div>
 
           <div class="info-product__prices prices-product">
-            <div class="prices-product__title">Цена по прайсу</div>
+
             <div class="prices-product__price price-product">
-              11 780, 20 руб.
+              19 290 ₽
             </div>
           </div>
           <div class="info-product__actions">
             <button
               onclick="document.location.href = 'basket.html'"
               class="info-product__add-to-cart btn btn--fill btn--orange">Купить
-            </button>
-            <button class="info-product__add-to-favorite btn--clear">
-              <svg
-                width="32"
-                height="43">
-                <use xlink:href="img/spritemap.svg#sprite-favorite"></use>
-              </svg>
-              <span>В избранное</span>
             </button>
           </div>
 
@@ -168,190 +142,142 @@ title: "Заголовок | Проект",
       </div>
 
       <div class="product__footer">
-        <div class="product__viewed-products viewed-products">
-          <div class="viewed-products__title">Просмотренные товары</div>
-          <div class="viewed-products__inner">
-
-
-            <div class="viewed-products__list product-list">
-              <div class="product-list__item item-product">
-                <a href="product.html"
-                   title=""
-                   class="item-product__image">
-                  <img
-                    src="uploads/category/1.png"
-                    alt="">
-                </a>
-                <div class="item-product__info">
-                  <a
-                    href="product.html"
-                    class="item-product__name">
-                    Колесо дисковое 533-310
-                  </a>
-                  <div class="item-product__props props-item-product">
-
-                    <div class="props-item-product__item prop-item-product">
-                      <span class="prop-item-product__name">Вес:</span>
-                      <span class="prop-item-product__value">25 кг</span>
+        <div class="product__reviews reviews-list">
+          <div class="reviews-list__title">
+            Отзывы
+          </div>
+          <div class="reviews-list__inner">
+            <div class="reviews-list__item item-review">
+              <div class="item-review__header">
+                <div class="item-review__date">10.02.2020</div>
+                <div class="item-review__author">Алексей</div>
+                <div class="item-review__rate rate-review">
+                  <div class="rate-review__inner">
+                    <div class="rate-review__item rate-review__item--fill">
+                      <svg width="10"
+                           height="10">
+                        <use xlink:href="img/spritemap.svg#sprite-star"></use>
+                      </svg>
                     </div>
-                    <div class="props-item-product__item prop-item-product">
-                      <span class="prop-item-product__name">Материал:</span>
-                      <span class="prop-item-product__value">Алюминий</span>
+                    <div class="rate-review__item rate-review__item--fill">
+                      <svg width="10"
+                           height="10">
+                        <use xlink:href="img/spritemap.svg#sprite-star"></use>
+                      </svg>
                     </div>
-                    <div class="props-item-product__item prop-item-product">
-                      <span class="prop-item-product__name">Габаритные размеры:</span>
-                      <span class="prop-item-product__value">25*25*25 см</span>
+                    <div class="rate-review__item rate-review__item--fill">
+                      <svg width="10"
+                           height="10">
+                        <use xlink:href="img/spritemap.svg#sprite-star"></use>
+                      </svg>
                     </div>
-
+                    <div class="rate-review__item rate-review__item--fill">
+                      <svg width="10"
+                           height="10">
+                        <use xlink:href="img/spritemap.svg#sprite-star"></use>
+                      </svg>
+                    </div>
+                    <div class="rate-review__item">
+                      <svg width="10"
+                           height="10">
+                        <use xlink:href="img/spritemap.svg#sprite-star"></use>
+                      </svg>
+                    </div>
                   </div>
-                </div>
-                <div class="item-product__prices prices-item-product">
-                  <div class="prices-item-product__price">
-                    11 000,25 руб.
-                  </div>
-                </div>
-                <div class="item-product__footer">
-                  <button
-                    type="button"
-                    class="item-product__add-to-cart btn btn--fill btn--orange">
-                    Купить
-                  </button>
-                  <button
-                    type="button"
-                    class="item-product__add-to-favorite btn--clear"
-                    aria-label="Добавить в избранное">
-                    <svg
-                      width="21"
-                      height="27">
-                      <use xlink:href="img/spritemap.svg#sprite-favorite"></use>
-                    </svg>
-                  </button>
+
                 </div>
               </div>
-              <div class="product-list__item item-product">
-                <a href="product.html"
-                   title=""
-                   class="item-product__image">
-                  <img
-                    src="uploads/category/1.png"
-                    alt="">
-                </a>
-                <div class="item-product__info">
-                  <a
-                    href="product.html"
-                    class="item-product__name">
-                    Колесо дисковое 533-310
-                  </a>
-                  <div class="item-product__props props-item-product">
-
-                    <div class="props-item-product__item prop-item-product">
-                      <span class="prop-item-product__name">Вес:</span>
-                      <span class="prop-item-product__value">25 кг</span>
-                    </div>
-                    <div class="props-item-product__item prop-item-product">
-                      <span class="prop-item-product__name">Материал:</span>
-                      <span class="prop-item-product__value">Алюминий</span>
-                    </div>
-                    <div class="props-item-product__item prop-item-product">
-                      <span class="prop-item-product__name">Габаритные размеры:</span>
-                      <span class="prop-item-product__value">25*25*25 см</span>
-                    </div>
-
-                  </div>
-                </div>
-                <div class="item-product__prices prices-item-product">
-                  <div class="prices-item-product__price">
-                    11 000,25 руб.
-                  </div>
-                </div>
-                <div class="item-product__footer">
-                  <button
-                    type="button"
-                    class="item-product__add-to-cart btn btn--fill btn--orange">
-                    Купить
-                  </button>
-                  <button
-                    type="button"
-                    class="item-product__add-to-favorite btn--clear"
-                    aria-label="Добавить в избранное">
-                    <svg
-                      width="21"
-                      height="27">
-                      <use xlink:href="img/spritemap.svg#sprite-favorite"></use>
-                    </svg>
-                  </button>
-                </div>
+              <div class="item-review__text">
+                Заказал двигатель ЯМЗ для трактора K700. С доставкой проблем не было, быстро, двигатель качественной сборки, все работает. Рекомендую к покупке.
               </div>
-              <div class="product-list__item item-product">
-                <a href="product.html"
-                   title=""
-                   class="item-product__image">
-                  <img
-                    src="uploads/category/1.png"
-                    alt="">
-                </a>
-                <div class="item-product__info">
-                  <a
-                    href="product.html"
-                    class="item-product__name">
-                    Колесо дисковое 533-310
-                  </a>
-                  <div class="item-product__props props-item-product">
-
-                    <div class="props-item-product__item prop-item-product">
-                      <span class="prop-item-product__name">Вес:</span>
-                      <span class="prop-item-product__value">25 кг</span>
-                    </div>
-                    <div class="props-item-product__item prop-item-product">
-                      <span class="prop-item-product__name">Материал:</span>
-                      <span class="prop-item-product__value">Алюминий</span>
-                    </div>
-                    <div class="props-item-product__item prop-item-product">
-                      <span class="prop-item-product__name">Габаритные размеры:</span>
-                      <span class="prop-item-product__value">25*25*25 см</span>
-                    </div>
-
-                  </div>
-                </div>
-                <div class="item-product__prices prices-item-product">
-                  <div class="prices-item-product__price">
-                    11 000,25 руб.
-                  </div>
-                </div>
-                <div class="item-product__footer">
-                  <button
-                    type="button"
-                    class="item-product__add-to-cart btn btn--fill btn--orange">
-                    Купить
-                  </button>
-                  <button
-                    type="button"
-                    class="item-product__add-to-favorite btn--clear"
-                    aria-label="Добавить в избранное">
-                    <svg
-                      width="21"
-                      height="27">
-                      <use xlink:href="img/spritemap.svg#sprite-favorite"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-
-
             </div>
 
-
           </div>
-
         </div>
+        <div class="product__review-form review-form">
+          <div class="review-form__title">
+            Оставить отзыв о товаре
+          </div>
+          <div class="review-form__inner">
+            <form class="form"
+                  action="">
+              <div class="form__inner">
+                <div class="form__row">
+                  <div class="form__col">
+                    <div class="review-form__rating rating-form">
+                      <div class="rating-form__title">
+
+                      </div>
+                      <div class="rating-form__inner">
+                        <div class="rating-form__item rating-form__item--fill"></div>
+                        <div class="rating-form__item rating-form__item--fill"></div>
+                        <div class="rating-form__item rating-form__item--fill"></div>
+                        <div class="rating-form__item"></div>
+                        <div class="rating-form__item"></div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="form__row">
+                  <div class="form__col form__col--6">
+                    <div class="form__item item-form">
+                      <label class="item-form__label item-form__label--text">
+                        <input
+                          type="text"
+                          class="item-form__field item-form__field--text">
+                        <span class="item-form__name  item-form__name--text">Ваше имя</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form__col form__col--6">
+                    <div class="form__item item-form">
+                      <label class="item-form__label item-form__label--text">
+                        <input
+                          type="text"
+                          class="item-form__field item-form__field--text">
+                        <span class="item-form__name  item-form__name--text">Ваш email</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__row">
+                  <div class="form__col form__col--12">
+                    <div class="form__item item-form">
+                      <label class="item-form__label item-form__label--text">
+                        <textarea class="item-form__field item-form__field--text"
+                                  rows="6"></textarea>
+                        <span class="item-form__name  item-form__name--text">Текст отзыва</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <footer class="form__footer review-form__footer">
+                <div class="form__actions">
+                  <button class="form__btn btn btn--fill review-form__btn"
+                          type="submit">ОТПРАВИТЬ
+                  </button>
+                </div>
+                <div class="form__item item-form item-form--agree">
+                  Нажимая на кнопку «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь c
+                  <a target="_blank"
+                     rel="noopener noreferrer"
+                     href="privacy.html">политикой конфиденциальности</a>
+                </div>
+              </footer>
+
+
+            </form>
+          </div>
+        </div>
+
+
       </div>
 
 
     </div>
-
-
   </div>
-</div>
 
 
 </div>

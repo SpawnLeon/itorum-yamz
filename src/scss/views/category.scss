@@ -474,6 +474,9 @@
     // .form--list-filters .form__row
     &__row {
       flex-wrap : wrap;
+      margin-top : 25px;
+      margin-bottom : 25px;
+
 
       @media screen and (max-width : 767px) {
         margin-right : 0;
@@ -482,6 +485,7 @@
     }
 
     .form__col {
+
       @media screen and (max-width : 767px) {
         flex          : 0 0 100%;
         padding-right : 0;

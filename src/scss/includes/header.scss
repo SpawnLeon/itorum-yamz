@@ -7,30 +7,32 @@
 
   // .header__inner
   &__inner {
-    display     : flex;
+    display : flex;
   }
 
   // .header__logo
   &__logo {
-    display: flex;
-    justify-content: center;
-    width: 160px;
-    padding-bottom: 48px;
-    padding-top: 49px;
+    position         : relative;
+    top              : 20px;
+    display          : flex;
+    justify-content  : center;
+    width            : 160px;
+    margin-right     : 88px;
+    padding-top      : 49px;
+    padding-bottom   : 48px;
     background-color : #252b33;
-    margin-right: 88px;
-    position: relative;
-    top: 20px;
+
 
   }
 
   // .header__logo-btn
   &__logo-btn {
+
   }
 
   // .header__content
   &__content {
-    flex        : 1 1 auto;
+    flex : 1 1 auto;
 
   }
 
@@ -38,11 +40,11 @@
   &__row {
     // .header__row--top
     &--top {
-      display: flex;
-      align-items: center;
-      padding-top: 19px;
-      padding-bottom: 16px;
-      height: 76px;
+      display        : flex;
+      align-items    : center;
+      height         : 76px;
+      padding-top    : 19px;
+      padding-bottom : 16px;
     }
 
     // .header__row--middle
@@ -90,7 +92,7 @@
 
   // .header__nav
   &__nav {
-    margin-left: 247px;
+    margin-left : 247px;
   }
 
 
@@ -114,14 +116,42 @@
 }
 
 .middle-header {
-  width            : 100vw;
-  margin-left      : calc((100vw - #{$desktopWidth} + 30px) / -2);
+  width       : 100vw;
+  margin-left : calc((100vw - #{$desktopWidth} + 30px) / -2);
+  transition  : all 0.1s;
 
   // .middle-header__container
   &__container {
     display         : flex;
     align-items     : center;
     justify-content : space-between;
+  }
+}
+
+.has-fixed-header {
+  .middle-header {
+    position         : fixed;
+    top              : 0;
+    background-color : #252b33;
+  }
+
+  .basket-block__total,
+  .personal-block-header__link,
+  .basket-block__title,
+  .catalog-menu__link {
+    color : #fff;
+  }
+
+
+  .header__logo {
+    position       : fixed;
+    z-index        : 1;
+    top            : 0;
+    padding-top    : 11px;
+    padding-bottom : 10px;
+  }
+  .catalog-menu__link > svg {
+    fill: #fff;
   }
 }
 
