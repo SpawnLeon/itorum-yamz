@@ -66,13 +66,14 @@ input:-webkit-autofill {
 
   // .form__group
   &__group {
-    margin-bottom : 50px;
+    margin-bottom : 40px;
   }
 
 
-  // .form--register
-  &--register {
-    max-width : 520px;
+  // .form--personal
+  &--personal {
+    max-width : 410px;
+    margin    : 0 auto;
   }
 
   // .form--auth
@@ -88,14 +89,14 @@ input:-webkit-autofill {
 
   // .form__row
   &__row {
-    $gutter      : 10px;
+    $gutter       : 10px;
 
-    display      : flex;
-    flex-wrap    : wrap;
-    margin-right : -$gutter;
-    margin-left  : -$gutter;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    display       : flex;
+    flex-wrap     : wrap;
+    margin-top    : 25px;
+    margin-right  : -$gutter;
+    margin-bottom : 25px;
+    margin-left   : -$gutter;
 
     // .form__row > .form__col
     & > .form__col {
@@ -129,9 +130,9 @@ input:-webkit-autofill {
 
   // .item-form--agree
   &--agree {
-    font-size: 11px;
+    font-size   : 11px;
     line-height : 14px;
-    text-align : center;
+    text-align  : center;
   }
 
   // .item-form--agree-write-us
@@ -178,7 +179,6 @@ input:-webkit-autofill {
     &--text {
       font-size        : 13px;
       line-height      : 1.2307;
-
       width            : 100%;
       padding          : 29px 20px 11px;
       border-radius    : 10px;
@@ -217,7 +217,7 @@ input:-webkit-autofill {
           left   : 0;
           width  : 12px;
           height : 12px;
-          border : 1px solid #C4C4C4;
+          border : 1px solid #c4c4c4;
         }
 
         &::after {

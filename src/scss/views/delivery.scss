@@ -1,5 +1,27 @@
 .delivery-page {
+  // .delivery-page__block
+  &__block {
+    max-width : 850px;
+  }
 
+  // .delivery-page__title
+  &__title {
+    font-size   : 16px;
+    font-weight : 500;
+    line-height : 1.12;
 
+  }
 
+  // .delivery-page__text
+  &__text {
+    font-size   : 13px;
+    font-weight : normal;
+    font-style  : normal;
+    line-height : 1.38;
+  }
+
+  // .delivery-page__widget
+  &__widget {
+    margin : 50px 0 80px;
+  }
 }

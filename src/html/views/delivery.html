@@ -14,8 +14,59 @@ title: "Заголовок | Проект",
     <h1 class="page-content__title">ДоставкаФ</h1>
 
     <div class="page-content__delivery delivery-page">
+      <div class="delivery-page__block">
+        <div class="delivery-page__title">Доставка заказов осуществляется компанией PONYExpress</div>
+        <div class="delivery-page__text">
+          <p>
+            Рассчитайте стоимость доставки Вашего товара с помощью калькулятора доставки. Стоимость доставки зависит от веса заказа, габаритов, место нахождения.
+            <br>
+            Расчет стоимости приблизительный, финальная стоимость и тип доставки будут рассчитаны при размещении и подтверждении заказа.
+          </p>
+        </div>
+      </div>
+      <div class="delivery-page__widget">
+        <div id="PONYExpressApp"></div>
+        <script type="text/javascript"
+                src="https://pvz.ponyexpress.ru/e-commerce/widget1.0.js"></script>
 
-
+        <script type="text/javascript">
+          new PvzWidget({
+            mount: document.getElementById('PONYExpressApp'),
+            params: {
+              ignore_ids: [],
+            },
+            onSelectPoint: function(poi) {
+              console.log(poi);
+              document.getElementById('debug').innerText = JSON.stringify(poi);
+            },
+            toggleFullscreen: function() {
+              if (document.getElementById('app').className == 'fullscreen') {
+                document.getElementById('app').className = '';
+              } else {
+                document.getElementById('app').className = 'fullscreen';
+              }
+            },
+          });
+        </script>
+      </div>
+      <div class="delivery-page__block">
+        <div class="delivery-page__title">Проверка и получение заказа</div>
+        <div class="delivery-page__text">
+          <p>
+            При получении товара внимательно осмотрите его внешний вид. Убедитесь в отсутствии видимых механических повреждений, в соответствии количества и комплектации товара согласно накладной. Расписываясь в документах, подтверждающих получение товара и выполнение доставки (Товарная накладная), Вы подтверждаете прием вами товара по внешнему виду, комплектации и количеству, а также отсутствие претензий к товару.
+            <br>
+            В случае отказа покупателя от подписания документов, подтверждающих получение товара и выполнение доставки, передача товара не производится
+          </p>
+          <p>
+            Водитель-экспедитор не консультирует по вопросам технических параметров и функциональных особенностей товаров, их совместимости, стоимости и т.д.
+            <br>
+            При получении товара представителем юридического лица необходимо предъявить доверенность на получение материальных ценностей, оформленную в соответствии с законодательством РФ. Доставка возможна также при наличии на объекте круглой печати.
+          </p>
+          <p>
+            При оформлении нескольких онлайн-заказов на сайте, они будут обрабатываться отдельно и будут доставлены разными машинами в день и временной интервал, выбранный вами при размещении заказа
+          </p>
+        </div>
+      </div>
 
     </div>
   </div>

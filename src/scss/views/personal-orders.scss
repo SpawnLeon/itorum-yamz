@@ -15,7 +15,7 @@
   &__item,
   tr {
     cursor        : pointer;
-    border-bottom : 1px solid rgba(0, 0, 0, 0.25);
+    border-bottom : 1px solid #fff;
 
     @media screen and (max-width : 767px) {
 
@@ -30,7 +30,11 @@
   }
 
   th {
-    padding : 18px 15px 18px 15px;
+    font-size   : 14px;
+    font-weight : 500;
+    line-height : 1.2857;
+    padding     : 15px 15px 15px 15px;
+
   }
 
   td {
@@ -81,19 +85,26 @@
 }
 
 .personal-orders {
+  margin: 0 auto 0;
+  max-width : 1060px;
 
   // .personal-orders__copy-orders
   &__copy-orders {
-
   }
 
   // .personal-orders__pdf
   &__pdf {
     margin-left : 20px;
-
   }
 
+  // .personal-orders__table
+  &__table {
+    margin-top : 45px;
+  }
 
+  // .personal-orders__header
+  &__header {
+  }
 }
 
 
@@ -102,9 +113,9 @@
 
   @media screen and (max-width : 767px) {
     display               : grid;
+    padding               : 5px 0;
     grid-template-columns : repeat(3, calc(100% / 3 - 12px));
     grid-column-gap       : 18px;
-    padding : 5px 0;
   }
 
   // .item-personal-order__title
@@ -143,6 +154,7 @@
     grid-column : 2 / 3;
     grid-row    : 2 / 3;
 
+
     @media screen and (max-width : 767px) {
       text-align : right;
     }
@@ -172,4 +184,40 @@
 }
 
 
+.header-orders-table {
+  display : flex;
 
+  // .header-orders-table__title
+  &__title {
+    font-size    : 20px;
+    font-weight  : bold;
+    line-height  : 1.25;
+    margin-right : 75px;
+    color        : #252b33;
+  }
+
+  // .header-orders-table__filter
+  &__filter {
+    display : flex;
+  }
+}
+
+
+.filter-header-orders {
+  // .filter-header-orders__item
+  &__item {
+    font-size     : 14px;
+    font-weight   : 500;
+    padding       : 0 3px;
+    color         : #252b33;
+    border-bottom : 2px solid transparent;
+    margin-right : 25px;
+    text-decoration : none;
+    display : inline-block;
+
+
+    &.active {
+      border-color : #005693;
+    }
+  }
+}

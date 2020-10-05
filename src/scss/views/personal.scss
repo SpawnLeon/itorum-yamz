@@ -1,24 +1,31 @@
 .personal-page {
+  width            : 100vw;
+  margin-bottom    : -60px;
+
+  margin-left      : calc((100vw - #{$desktopWidth} + 30px) / -2);
+  padding-bottom   : 60px;
+  border-top       : 1px solid #c4c4c4;
+  background-color : #f4f4f4;
+
   // .personal-page__inner
   &__inner {
-    display : flex;
 
-    @media screen and (max-width : 1023px) {
-      display : block;
-    }
+
+
 
   }
 
   // .personal-page__sidebar
   &__sidebar {
-    width        : 100%;
-    max-width    : 140px;
-    margin-right : 40px;
+    margin-bottom : 90px;
   }
 
   // .personal-page__content
   &__content {
     flex : 1 1 auto;
+  }
+  .item-form__field--text {
+    background-color : #fff;
   }
 }
 
@@ -36,29 +43,40 @@
 }
 
 .sidebar-personal-menu {
-  @media screen and (max-width : 1023px) {
-    display : flex;
-  }
+  display : flex;
+
 
   // .sidebar-personal-menu__item
   &__item {
+    margin : 0 50px 0 0;
   }
 
   // .sidebar-personal-menu__link
   &__link {
-    font-size       : 13px;
-    line-height     : 19px;
+    font-size       : 14px;
+    font-weight     : bold;
+    line-height     : 1.2857;
+    position        : relative;
     display         : block;
-    padding         : 5px 5px 5px 20px;
-
+    padding         : 20px 60px;
+    white-space     : nowrap;
     text-decoration : none;
-    color           : $mainFontColor;
+    letter-spacing  : 0.1em;
+    text-transform  : uppercase;
+    color           : #252b33;
 
-    @media screen and (max-width : 1023px) {
-      font-size : 12px;
-      padding   : 6px 7px;
-      white-space     : nowrap;
+    &::after {
+      content      : '';
+      position     : absolute;
+      bottom       : -13px;
+      left         : 0;
+      display      : block;
+      border-width : 13px;
+      border-style : solid;
+      border-color : transparent;
+
     }
+
 
     // .sidebar-personal-menu__link--active
     &--active,
@@ -67,7 +85,11 @@
     &:hover {
       text-decoration  : none;
       color            : #fff;
-      background-color : #526584;
+      background-color : #005693;
+
+      &::after {
+        border-left-color : #005693;
+      }
     }
   }
 
