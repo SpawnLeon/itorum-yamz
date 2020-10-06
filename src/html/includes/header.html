@@ -54,14 +54,25 @@
               </button>
             </form>
           </div>
-          <div class="header__city">
-            Петропавловск-Камчатский
-            <svg
-              width="6"
-              height="4">
-              <use xlink:href="img/spritemap.svg#sprite-city"></use>
-            </svg>
+          <div class="header__city city">
+            <div class="city__inner" onclick="this.nextElementSibling.classList.toggle('city-down--open')">
+              <div class="city__selected">
+                Петропавловск-Камчатский
+              </div>
+              <svg
+                width="6"
+                height="4">
+                <use xlink:href="img/spritemap.svg#sprite-city"></use>
+              </svg>
+            </div>
+            <div class="city__city-down city-down">
+              <div class="city-down__item">Москва</div>
+              <div class="city-down__item">Новосибирск</div>
+              <div class="city-down__item">Муром</div>
+              <div class="city-down__item">Ярославль</div>
+            </div>
           </div>
+
           <div class="header__phones">
             <a href="tel:+74852587878"
                class="header__phone">+7 (4852) 58-78-78</a>

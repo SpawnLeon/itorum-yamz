@@ -55,14 +55,25 @@
               </button>
             </form>
           </div>
-          <div class="header__city">
-            Петропавловск-Камчатский
-            <svg
-              width="6"
-              height="4">
-              <use xlink:href="img/spritemap.svg#sprite-city"></use>
-            </svg>
+          <div class="header__city city">
+            <div class="city__inner" onclick="this.nextElementSibling.classList.toggle('city-down--open')">
+              <div class="city__selected">
+                Петропавловск-Камчатский
+              </div>
+              <svg
+                width="6"
+                height="4">
+                <use xlink:href="img/spritemap.svg#sprite-city"></use>
+              </svg>
+            </div>
+            <div class="city__city-down city-down">
+              <div class="city-down__item">Москва</div>
+              <div class="city-down__item">Новосибирск</div>
+              <div class="city-down__item">Муром</div>
+              <div class="city-down__item">Ярославль</div>
+            </div>
           </div>
+
           <div class="header__phones">
             <a href="tel:+74852587878"
                class="header__phone">+7 (4852) 58-78-78</a>
@@ -135,19 +146,19 @@
                   </ul>
                 </li>
                 <li class="catalog-menu__item">
-                  <a href="catalog.html"
+                  <a href="payment.html"
                      class="catalog-menu__link">
                     Оплата
                   </a>
                 </li>
                 <li class="catalog-menu__item">
-                  <a href="catalog.html"
+                  <a href="delivery.html"
                      class="catalog-menu__link">
                     Доставка
                   </a>
                 </li>
                 <li class="catalog-menu__item">
-                  <a href="catalog.html"
+                  <a href="warranty.html"
                      class="catalog-menu__link">
                     Гарантия
                   </a>
@@ -163,18 +174,19 @@
 
 
             <div class="header__personal personal-block-header">
-              <a href=""
+              <a href="registration.html"
+                 data-js="show-form"
                  class="personal-block-header__link personal-block-header__link--auth">
                 Вход
               </a>
               /
-              <a href=""
-                 class="personal-block-header__link personal-block-header__link--favorite">
+              <a href="registration.html"
+                 class="personal-block-header__link personal-block-header__link--registration">
                 Регистрация
               </a>
             </div>
 
-            <a href=""
+            <a href="basket.html"
                class="header__basket basket-block">
               <div class="basket-block__title">Корзина</div>
               <div class="basket-block__count">5</div>
@@ -245,7 +257,119 @@
 
     <div class="page-content__payment payment-page">
 
+      <div class="payment-page__icons icons-payment">
+        <div class="icons-payment__item item-icon-payment">
+          <div class="item-icon-payment__icon">
+            <svg
+              width="97"
+              height="100">
+              <use xlink:href="img/spritemap.svg#sprite-item-icon-payment-1"></use>
+            </svg>
+          </div>
+          <div class="item-icon-payment__title">
+            Удобные способы <br> оплаты
+          </div>
+        </div>
+        <div class="icons-payment__item item-icon-payment">
+          <div class="item-icon-payment__icon">
+            <svg
+              width="116"
+              height="98">
+              <use xlink:href="img/spritemap.svg#sprite-item-icon-payment-2"></use>
+            </svg>
+          </div>
+          <div class="item-icon-payment__title">
+            Работаем с физическими <br>
+            и юридическими лицами
+          </div>
+        </div>
+        <div class="icons-payment__item item-icon-payment">
+          <div class="item-icon-payment__icon">
+            <svg
+              width="108"
+              height="107">
+              <use xlink:href="img/spritemap.svg#sprite-item-icon-payment-3"></use>
+            </svg>
+          </div>
+          <div class="item-icon-payment__title">
+            Гарантия возврата <br>
+            денежных средств
+          </div>
+        </div>
+      </div>
 
+      <div class="payment-page__content">
+        <div class="payment-page__block payment-block">
+          <div class="payment-block__title">Наличный расчет</div>
+          <div class="payment-block__text">
+            <p>При доставке товара курьерской службой.</p>
+            <p>В целях вашей безопасности рекомендуем использовать бесконтактные
+              способы оплаты: онлайн на сайте или банковской картой при получении заказа.</p>
+          </div>
+        </div>
+        <div class="payment-page__block payment-block">
+          <div class="payment-block__title">Оплата банковской картой</div>
+          <div class="payment-block__text">
+            <p>
+              При доставке товара курьерской службой <br>
+              К оплате принимаем <br>
+              MasterCard <br>
+              Visa <br>
+              МИР <br>
+              Maestro <br>
+              Visa Electron <br>
+              AmericanExpress
+            </p>
+
+          </div>
+        </div>
+        <div class="payment-page__block payment-block">
+          <div class="payment-block__title">Электронные способы оплаты через сайт</div>
+          <div class="payment-block__text">
+            <p>
+              Электронные способы оплаты через сайт <br>
+              К оплате принимаем <br>
+            </p>
+            <p>
+              Карты оплаты Visa, MasterCard, МИР, JCB подробная информация об оплате QIWI <br>
+              WebMoney <br>
+              Яндекс.Деньги <br>
+              Apple Pay <br>
+              Samsung Pay <br>
+              Google Pay <br>
+              Сбербанк Онлайн <br>
+            </p>
+
+          </div>
+        </div>
+        <div class="payment-page__block payment-block">
+          <div class="payment-block__title">Как оплатить заказ через сайт?</div>
+          <div class="payment-block__text">
+            <p>
+              При оформлении заказа необходимо выбрать электронный способ оплаты. <br>
+              После подтверждения заказа менеджером в личном кабинете на странице «Мои заказы» напротив оформленного заказа появится кнопка «Оплатить заказ». Для оплаты вы будете направлены на сайт платежной системы.
+            </p>
+          </div>
+        </div>
+        <div class="payment-page__block payment-block">
+          <div class="payment-block__title">Безналичный расчет для юридических лиц</div>
+          <div class="payment-block__text">
+            <p> Если покупка совершается от юридического лица, оплата производится по счету, который выставляет менеджер интернет-магазина.
+              <br>
+              Важно! Срок оплаты счета – до 3 дней. Возможно продление периода оплаты счета. Для этого необходимо связаться с персональным менеджером.
+              <br>
+              Товар отгружается в течение суток после поступления денежных средств на счет интернет-магазина (исключение составляют случаи оформления товаров в статусе «Под заказ»).
+              <br>
+            </p>
+            <p>
+              При отгрузке продукции в регионы сроки доставки включают время доставки товара на наш склад (до 2 рабочих дней) и время доставки до транспортной компании. Далее сроки доставки зависят от условий ТК.
+            </p>
+            <p>
+              По согласованию с менеджером, оформляющим заказ, для юридических лиц возможна оплата наличными. Порядок оплаты и условия доставки не меняются. Пакет документов тот же, что при безналичном расчете
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -277,19 +401,19 @@
 
           <ul class="footer__main-menu bottom-menu list--clear">
             <li class="bottom-menu__item">
-              <a href="/"
+              <a href="catalog.html"
                  class="bottom-menu__link">Каталог</a></li>
             <li class="bottom-menu__item">
-              <a href="delivery.html"
+              <a href="payment.html"
                  class="bottom-menu__link">Оплата</a></li>
             <li class="bottom-menu__item">
-              <a href=""
+              <a href="delivery.html"
                  class="bottom-menu__link">Доставка</a></li>
             <li class="bottom-menu__item">
               <a href="warranty.html"
                  class="bottom-menu__link">Гарантия</a></li>
             <li class="bottom-menu__item">
-              <a href="payment.html"
+              <a href="contacts.html"
                  class="bottom-menu__link">Контакты</a></li>
           </ul>
 
@@ -326,7 +450,70 @@
   </div>
 
 </footer>
+<div class="modal-form"
+     id="modal-form"
+     style="display: none;">
+  <div class="modal-form__inner">
+    <div class="modal-form__title">Авторизация</div>
 
+    <form
+      onsubmit="event.preventDefault();document.location.href = 'personal.html'"
+      class="form form--register"
+      data-tab="private-person"
+      action="">
+
+      <div class="form__inner">
+        <div class="form__content">
+
+          <div class="form__group group-form">
+
+
+            <div class="form__item item-form">
+              <label class="item-form__label item-form__label--text">
+                <input
+                  type="text"
+                  class="item-form__field item-form__field--text">
+                <span class="item-form__name  item-form__name--text">Email *</span>
+              </label>
+            </div>
+
+            <div class="form__item item-form">
+              <label class="item-form__label item-form__label--text">
+                <input
+
+                  type="password"
+                  class="item-form__field item-form__field--text">
+                <span class="item-form__name  item-form__name--text">Пароль *</span>
+              </label>
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+        <footer class="form__footer footer-form">
+          <div class="form__actions">
+            <button
+
+              class="form__btn btn btn--orange btn--fill"
+              type="submit">Войти
+            </button>
+          </div>
+          <div class="footer-form__links">
+            <a href="registration.html"
+               class="footer-form__link">Забыли пароль?</a>
+            <a href="registration.html"
+               class="footer-form__link">Регистрация</a>
+          </div>
+        </footer>
+      </div>
+    </form>
+
+
+  </div>
+</div>
 
 <script type="text/javascript" src="./js/bundle.js"></script></body>
 

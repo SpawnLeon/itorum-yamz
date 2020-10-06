@@ -55,14 +55,25 @@
               </button>
             </form>
           </div>
-          <div class="header__city">
-            Петропавловск-Камчатский
-            <svg
-              width="6"
-              height="4">
-              <use xlink:href="img/spritemap.svg#sprite-city"></use>
-            </svg>
+          <div class="header__city city">
+            <div class="city__inner" onclick="this.nextElementSibling.classList.toggle('city-down--open')">
+              <div class="city__selected">
+                Петропавловск-Камчатский
+              </div>
+              <svg
+                width="6"
+                height="4">
+                <use xlink:href="img/spritemap.svg#sprite-city"></use>
+              </svg>
+            </div>
+            <div class="city__city-down city-down">
+              <div class="city-down__item">Москва</div>
+              <div class="city-down__item">Новосибирск</div>
+              <div class="city-down__item">Муром</div>
+              <div class="city-down__item">Ярославль</div>
+            </div>
           </div>
+
           <div class="header__phones">
             <a href="tel:+74852587878"
                class="header__phone">+7 (4852) 58-78-78</a>
@@ -135,19 +146,19 @@
                   </ul>
                 </li>
                 <li class="catalog-menu__item">
-                  <a href="catalog.html"
+                  <a href="payment.html"
                      class="catalog-menu__link">
                     Оплата
                   </a>
                 </li>
                 <li class="catalog-menu__item">
-                  <a href="catalog.html"
+                  <a href="delivery.html"
                      class="catalog-menu__link">
                     Доставка
                   </a>
                 </li>
                 <li class="catalog-menu__item">
-                  <a href="catalog.html"
+                  <a href="warranty.html"
                      class="catalog-menu__link">
                     Гарантия
                   </a>
@@ -163,18 +174,19 @@
 
 
             <div class="header__personal personal-block-header">
-              <a href=""
+              <a href="registration.html"
+                 data-js="show-form"
                  class="personal-block-header__link personal-block-header__link--auth">
                 Вход
               </a>
               /
-              <a href=""
-                 class="personal-block-header__link personal-block-header__link--favorite">
+              <a href="registration.html"
+                 class="personal-block-header__link personal-block-header__link--registration">
                 Регистрация
               </a>
             </div>
 
-            <a href=""
+            <a href="basket.html"
                class="header__basket basket-block">
               <div class="basket-block__title">Корзина</div>
               <div class="basket-block__count">5</div>
@@ -240,137 +252,63 @@
 
 </ul>
 
-  <h1 class="page-content__title">Запрос на подбор запасных частей по ВИН номеру</h1>
-  <div class="forms-page">
+  <h1 class="page-content__title">Личный кабинет</h1>
+  <div class="page-content__personal personal-page">
+    <div class="personal-page__inner container">
+      <aside class="personal-page__sidebar sidebar-personal">
+        <nav class="sidebar-personal__nav">
+          <ul class="sidebar-personal__sidebar-personal-menu sidebar-personal-menu list--clear">
+            <li class="sidebar-personal-menu__item">
+              <a href="personal.html"
+                 class="sidebar-personal-menu__link">Профиль</a>
+            </li>
+            <li class="sidebar-personal-menu__item">
+              <a href="docs.html"
+                 class="sidebar-personal-menu__link sidebar-personal-menu__link--active">Договоры</a>
+            </li>
+            <li class="sidebar-personal-menu__item">
+              <a href="engines.html"
+                 class="sidebar-personal-menu__link">Мои двигатели</a>
+            </li>
+            <li class="sidebar-personal-menu__item">
+              <a href="personal-orders.html"
+                 class="sidebar-personal-menu__link">Заказы</a>
+            </li>
+            <li class="sidebar-personal-menu__item">
+              <a href=""
+                 class="sidebar-personal-menu__link">Бланк оптового заказа</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
 
 
-    <form class="form form--search-part"
-          action="">
-      <div class="form__inner">
-        <div class="form__content">
-
-          <div class="form__group group-form">
-
-
-
-
-            <div class="form__item item-form">
-              <label class="item-form__label item-form__label--text">
-                <input
-                  type="text"
-                  class="item-form__field item-form__field--text">
-                <span class="item-form__name  item-form__name--text">Модель автомобиля *</span>
-              </label>
-            </div>
-
-            <div class="form__item item-form">
-              <label class="item-form__label item-form__label--text">
-                <input
-                  type="text"
-                  class="item-form__field item-form__field--text">
-                <span class="item-form__name  item-form__name--text">Год выпуска *</span>
-              </label>
-            </div>
-
-            <div class="form__item item-form">
-              <label class="item-form__label item-form__label--text">
-                <input
-                  type="text"
-                  class="item-form__field item-form__field--text">
-                <span class="item-form__name  item-form__name--text">ВИН автомобиля *</span>
-              </label>
-            </div>
-
-            <div class="form__item item-form">
-              <label class="item-form__label item-form__label--text">
-                <input
-                  type="text"
-                  class="item-form__field item-form__field--text">
-                <span class="item-form__name  item-form__name--text">Наименование</span>
-              </label>
-            </div>
-
-            <div class="form__item item-form">
-              <label class="item-form__label item-form__label--text">
-                <input
-                  type="text"
-                  class="item-form__field item-form__field--text">
-                <span class="item-form__name  item-form__name--text">Каталожный номер</span>
-              </label>
-            </div>
-
-            <div class="form__item item-form">
-              <label class="item-form__label item-form__label--text">
-                <input
-                  type="text"
-                  class="item-form__field item-form__field--text">
-                <span class="item-form__name  item-form__name--text">Город (населенный пункт) *</span>
-              </label>
-            </div>
-
-            <div class="form__item item-form">
-              <label class="item-form__label item-form__label--text">
-                <input
-                  type="text"
-                  class="item-form__field item-form__field--text">
-                <span class="item-form__name  item-form__name--text">Субъект РФ</span>
-              </label>
-            </div>
-
-            <div class="form__item item-form">
-              <label class="item-form__label item-form__label--text">
-                <input
-                  type="text"
-                  class="item-form__field item-form__field--text">
-                <span class="item-form__name  item-form__name--text">ФИО, Наименование организации *</span>
-              </label>
-            </div>
-
-            <div class="form__item item-form">
-              <label class="item-form__label item-form__label--text">
-                <input
-                  type="text"
-                  class="item-form__field item-form__field--text">
-                <span class="item-form__name  item-form__name--text">Контактный телефон *</span>
-              </label>
-            </div>
-
-            <div class="form__item item-form">
-              <label class="item-form__label item-form__label--text">
-                <input
-                  type="text"
-                  class="item-form__field item-form__field--text">
-                <span class="item-form__name  item-form__name--text">E-mail *</span>
-              </label>
-            </div>
-
-            <div class="form__item item-form">
-              <label class="item-form__label item-form__label--text">
-
-                <textarea rows="3" class="item-form__field item-form__field--text item-form__field--textarea"></textarea>
-                <span class="item-form__name item-form__name--text">Примечания</span>
-              </label>
-            </div>
-
-
-
-          </div>
+      <div class="personal-page__content content-personal">
+        <div class="personal-docs">
+          <table class="personal-docs__table table-docs">
+            <tr class="table-docs__item table-docs__item--header">
+              <th>Номер договора</th>
+              <th class="item-personal-doc__discount">Скидка</th>
+            </tr>
+            <tr class="table-docs__item item-personal-doc">
+              <td class="item-personal-doc__name">ИМ/112525/05</td>
+              <td class="item-personal-doc__discount">10%</td>
+            </tr>
+            <tr class="table-docs__item item-personal-doc">
+              <td class="item-personal-doc__name">ИМ/112525/05</td>
+              <td class="item-personal-doc__discount">7%</td>
+            </tr>
+            <tr class="table-docs__item item-personal-doc">
+              <td class="item-personal-doc__name">ИМ/112525/05</td>
+              <td class="item-personal-doc__discount">5%</td>
+            </tr>
+          </table>
         </div>
 
-        <footer class="form__footer">
-          <div class="form__actions">
-            <button class="form__btn btn btn--orange btn--fill"
-                    type="submit">Отправить
-            </button>
-          </div>
-        </footer>
       </div>
-    </form>
-
-
+    </div>
   </div>
 </div>
-
 <!--</div>  вынести из страниц в header  и footer  -->
 
 <!-- /.page-content -->
@@ -396,19 +334,19 @@
 
           <ul class="footer__main-menu bottom-menu list--clear">
             <li class="bottom-menu__item">
-              <a href="/"
+              <a href="catalog.html"
                  class="bottom-menu__link">Каталог</a></li>
             <li class="bottom-menu__item">
-              <a href="delivery.html"
+              <a href="payment.html"
                  class="bottom-menu__link">Оплата</a></li>
             <li class="bottom-menu__item">
-              <a href=""
+              <a href="delivery.html"
                  class="bottom-menu__link">Доставка</a></li>
             <li class="bottom-menu__item">
               <a href="warranty.html"
                  class="bottom-menu__link">Гарантия</a></li>
             <li class="bottom-menu__item">
-              <a href="payment.html"
+              <a href="contacts.html"
                  class="bottom-menu__link">Контакты</a></li>
           </ul>
 
@@ -445,7 +383,70 @@
   </div>
 
 </footer>
+<div class="modal-form"
+     id="modal-form"
+     style="display: none;">
+  <div class="modal-form__inner">
+    <div class="modal-form__title">Авторизация</div>
 
+    <form
+      onsubmit="event.preventDefault();document.location.href = 'personal.html'"
+      class="form form--register"
+      data-tab="private-person"
+      action="">
+
+      <div class="form__inner">
+        <div class="form__content">
+
+          <div class="form__group group-form">
+
+
+            <div class="form__item item-form">
+              <label class="item-form__label item-form__label--text">
+                <input
+                  type="text"
+                  class="item-form__field item-form__field--text">
+                <span class="item-form__name  item-form__name--text">Email *</span>
+              </label>
+            </div>
+
+            <div class="form__item item-form">
+              <label class="item-form__label item-form__label--text">
+                <input
+
+                  type="password"
+                  class="item-form__field item-form__field--text">
+                <span class="item-form__name  item-form__name--text">Пароль *</span>
+              </label>
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+        <footer class="form__footer footer-form">
+          <div class="form__actions">
+            <button
+
+              class="form__btn btn btn--orange btn--fill"
+              type="submit">Войти
+            </button>
+          </div>
+          <div class="footer-form__links">
+            <a href="registration.html"
+               class="footer-form__link">Забыли пароль?</a>
+            <a href="registration.html"
+               class="footer-form__link">Регистрация</a>
+          </div>
+        </footer>
+      </div>
+    </form>
+
+
+  </div>
+</div>
 
 <script type="text/javascript" src="./js/bundle.js"></script></body>
 
