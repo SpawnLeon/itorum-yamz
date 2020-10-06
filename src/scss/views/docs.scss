@@ -1,0 +1,42 @@
+.personal-docs {
+
+  font-size: 14px;
+  line-height: 1.2857;
+  max-width: 630px;
+  margin: 0 auto;
+
+  // ..personal-docs__table
+  &__table {
+    width      : 100%;
+  }
+
+}
+
+.table-docs {
+  // .table-engines__item
+  &__item {
+
+    > * {
+      padding       : 15px 0;
+      border-bottom : 1px solid #fff;
+    }
+
+    // .table-docs__item--header
+    &--header {
+      font-weight : 500;
+    }
+  }
+}
+
+.item-personal-doc {
+  // .item-personal-doc__name
+  &__name{
+    font-weight: 500;
+  }
+
+  // .item-personal-doc__discount
+  &__discount {
+    text-align : right;
+  }
+
+}

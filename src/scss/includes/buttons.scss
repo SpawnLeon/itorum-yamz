@@ -34,7 +34,7 @@ button {
   transition     : all 0.3s;
   text-align     : center;
   text-transform : uppercase;
-  color          : #fff;
+  color          : #005693;
   border         : 1px solid #005693;
   border-radius  : 100px;
 
@@ -42,7 +42,8 @@ button {
   &:hover,
   &:active,
   &:focus {
-    color : #000;
+    color : #fff;
+    background-color : #005693;
 
   }
 

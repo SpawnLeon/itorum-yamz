@@ -1,0 +1,126 @@
+<% var data = {
+title: "Заголовок | Проект",
+
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+
+<div class="container">
+  <%= _.template(require('./../includes/breadcrumbs.html').default)(data) %>
+  <h1 class="page-content__title">Личный кабинет</h1>
+  <div class="page-content__personal personal-page">
+    <div class="personal-page__inner container">
+      <aside class="personal-page__sidebar sidebar-personal">
+        <nav class="sidebar-personal__nav">
+          <ul class="sidebar-personal__sidebar-personal-menu sidebar-personal-menu list--clear">
+            <li class="sidebar-personal-menu__item">
+              <a href="personal.html"
+                 class="sidebar-personal-menu__link">Профиль</a>
+            </li>
+            <li class="sidebar-personal-menu__item">
+              <a href="docs.html"
+                 class="sidebar-personal-menu__link">Договоры</a>
+            </li>
+            <li class="sidebar-personal-menu__item">
+              <a href="engines.html"
+                 class="sidebar-personal-menu__link  sidebar-personal-menu__link--active">Мои двигатели</a>
+            </li>
+            <li class="sidebar-personal-menu__item">
+              <a href="personal-orders.html"
+                 class="sidebar-personal-menu__link">Заказы</a>
+            </li>
+            <li class="sidebar-personal-menu__item">
+              <a href=""
+                 class="sidebar-personal-menu__link">Бланк оптового заказа</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+
+      <div class="personal-page__content content-personal">
+        <div class="personal-engines">
+          <div class="personal-engines__header">
+            <div class="personal-engines__title">Список сохраненных конфигураций (3)</div>
+            <button type="button"
+                    class="personal-engines__add btn btn--clear">Добавить
+            </button>
+          </div>
+          <table class="header-engines-table__table table-engines">
+            <tr class="table-engines__item table-engines__item--header">
+              <th>Модель двигателя</th>
+              <th>Дата выпуска</th>
+              <th>Заводской номер</th>
+              <th></th>
+            </tr>
+            <tr class="table-engines__item item-personal-engine">
+              <td class="item-personal-engine__number">ИМ/112525/05</td>
+              <td class="item-personal-engine__date">
+                10.06.2020
+              </td>
+              <td class="item-personal-engine__number">
+
+              </td>
+              <td class="item-personal-engine__actions">
+                <button
+                  type="button"
+                  class="item-personal-engine__remove"
+                >
+                  <svg
+                    width="16"
+                    height="16">
+                    <use xlink:href="img/spritemap.svg#sprite-personal-engine-remove"></use>
+                  </svg>
+                </button>
+              </td>
+            </tr>
+            <tr class="table-engines__item item-personal-engine">
+              <td class="item-personal-engine__number">ИМ/112525/05</td>
+              <td class="item-personal-engine__date">
+                10.06.2020
+              </td>
+              <td class="item-personal-engine__number">
+
+              </td>
+              <td class="item-personal-engine__actions">
+                <button
+                  type="button"
+                  class="item-personal-engine__remove"
+                >
+                  <svg
+                    width="16"
+                    height="16">
+                    <use xlink:href="img/spritemap.svg#sprite-personal-engine-remove"></use>
+                  </svg>
+                </button>
+              </td>
+            </tr>
+            <tr class="table-engines__item item-personal-engine">
+              <td class="item-personal-engine__number">ИМ/112525/05</td>
+              <td class="item-personal-engine__date">
+                10.06.2020
+              </td>
+              <td class="item-personal-engine__number">
+                631376
+              </td>
+              <td class="item-personal-engine__actions">
+                <button
+                  type="button"
+                  class="item-personal-engine__remove"
+                >
+                  <svg
+                    width="16"
+                    height="16">
+                    <use xlink:href="img/spritemap.svg#sprite-personal-engine-remove"></use>
+                  </svg>
+                </button>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<%= _.template(require('./../includes/footer.html').default)(data) %>

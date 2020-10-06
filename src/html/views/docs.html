@@ -1,0 +1,67 @@
+<% var data = {
+title: "Заголовок | Проект",
+
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+
+<div class="container">
+  <%= _.template(require('./../includes/breadcrumbs.html').default)(data) %>
+  <h1 class="page-content__title">Личный кабинет</h1>
+  <div class="page-content__personal personal-page">
+    <div class="personal-page__inner container">
+      <aside class="personal-page__sidebar sidebar-personal">
+        <nav class="sidebar-personal__nav">
+          <ul class="sidebar-personal__sidebar-personal-menu sidebar-personal-menu list--clear">
+            <li class="sidebar-personal-menu__item">
+              <a href="personal.html"
+                 class="sidebar-personal-menu__link">Профиль</a>
+            </li>
+            <li class="sidebar-personal-menu__item">
+              <a href="docs.html"
+                 class="sidebar-personal-menu__link sidebar-personal-menu__link--active">Договоры</a>
+            </li>
+            <li class="sidebar-personal-menu__item">
+              <a href="engines.html"
+                 class="sidebar-personal-menu__link">Мои двигатели</a>
+            </li>
+            <li class="sidebar-personal-menu__item">
+              <a href="personal-orders.html"
+                 class="sidebar-personal-menu__link">Заказы</a>
+            </li>
+            <li class="sidebar-personal-menu__item">
+              <a href=""
+                 class="sidebar-personal-menu__link">Бланк оптового заказа</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+
+      <div class="personal-page__content content-personal">
+        <div class="personal-docs">
+          <table class="personal-docs__table table-docs">
+            <tr class="table-docs__item table-docs__item--header">
+              <th>Номер договора</th>
+              <th class="item-personal-doc__discount">Скидка</th>
+            </tr>
+            <tr class="table-docs__item item-personal-doc">
+              <td class="item-personal-doc__name">ИМ/112525/05</td>
+              <td class="item-personal-doc__discount">10%</td>
+            </tr>
+            <tr class="table-docs__item item-personal-doc">
+              <td class="item-personal-doc__name">ИМ/112525/05</td>
+              <td class="item-personal-doc__discount">7%</td>
+            </tr>
+            <tr class="table-docs__item item-personal-doc">
+              <td class="item-personal-doc__name">ИМ/112525/05</td>
+              <td class="item-personal-doc__discount">5%</td>
+            </tr>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<%= _.template(require('./../includes/footer.html').default)(data) %>

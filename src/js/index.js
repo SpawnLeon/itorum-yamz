@@ -95,6 +95,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  //detail order
+  document.querySelectorAll('.personal-orders__item').forEach((el, i) => {
+
+    el.addEventListener('click', function(event) {
+      event.preventDefault();
+
+      $.fancybox.open({
+        src: '#personal-orders-order-detail',
+        type: 'inline',
+      });
+    });
+  });
+
+  //write-us form
+  document.querySelectorAll('[data-js="show-form"]').forEach((el, i) => {
+
+    el.addEventListener('click', function(event) {
+      event.preventDefault();
+
+      $.fancybox.open({
+        src: '#modal-form',
+        type: 'inline',
+      });
+    });
+  });
+
 });
 
 

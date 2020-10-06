@@ -1,0 +1,76 @@
+.header-engines-table {
+  // .header-engines-table__table
+  &__table {
+    width      : 100%;
+    margin-top : 45px;
+  }
+}
+
+
+.personal-engines {
+  font-size   : 14px;
+  line-height : 1.2857;
+  max-width   : 630px;
+  margin      : 0 auto;
+
+  // .personal-engines__header
+  &__header {
+    display : flex;
+  }
+
+  // .personal-engines__title
+  &__title {
+    font-size    : 20px;
+    font-weight  : bold;
+    line-height  : 1.25;
+    display      : flex;
+    align-items  : center;
+
+    margin-right : 60px;
+    color        : #252b33;
+
+  }
+
+  // .personal-engines__add
+  &__add {
+  }
+}
+
+
+.table-engines {
+  // .table-engines__item
+  &__item {
+
+    > * {
+      padding       : 15px 0;
+      border-bottom : 1px solid #fff;
+    }
+
+    // .table-engines__item--header
+    &--header {
+      font-weight : 500;
+    }
+  }
+}
+
+.item-personal-engine {
+  // .item-personal-engine__number
+  &__number {
+  }
+
+  // .item-personal-engine__date
+  &__date {
+  }
+
+  // .item-personal-engine__number
+  &__number {
+  }
+
+  // .item-personal-engine__actions
+  &__actions {
+  }
+
+  // .item-personal-engine__remove
+  &__remove {
+  }
+}

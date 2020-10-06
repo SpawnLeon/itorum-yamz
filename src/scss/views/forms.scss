@@ -6,6 +6,24 @@ input:-webkit-autofill {
 
 .form {
 
+  // .form__show-fields
+  &__show-fields {
+
+    font-size            : 15px;
+    line-height          : 1.2666;
+    display              : block;
+    max-width            : 140px;
+    margin               : -5px auto 40px;
+    text-align           : center;
+    text-decoration-line : underline;
+
+    &:hover {
+      text-decoration : none;
+    }
+
+
+  }
+
 
   // .form__description
   &__description {
@@ -180,7 +198,8 @@ input:-webkit-autofill {
       font-size        : 13px;
       line-height      : 1.2307;
       width            : 100%;
-      padding          : 29px 20px 11px;
+      padding          : 29px 20px 10px;
+      border           : 1px solid #e5e5e5;
       border-radius    : 10px;
       background-color : #f4f4f4;
     }
@@ -350,7 +369,7 @@ input:-webkit-autofill {
       width            : 16px;
       height           : 16px;
       margin-right     : 6px;
-      border           : 1px solid #526584;
+      border           : 1px solid #e5e5e5;
       border-radius    : 2px;
       background-color : #fff;
 
@@ -438,7 +457,10 @@ input:-webkit-autofill {
 }
 
 .modal-form {
-  padding : 25px 21px;
+  padding : 45px 40px;
+  max-width : 400px;
+  width: 100%;
+
 
   // .modal-form__inner
   &__inner {
@@ -447,10 +469,12 @@ input:-webkit-autofill {
 
   // .modal-form__title
   &__title {
-    font-size     : 20px;
-    font-weight   : bold;
-    line-height   : 1.5;
-    margin-bottom : -20px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1.2666;
+    letter-spacing: 0.05em;
+    color: #252B33;
+
 
   }
 
@@ -458,3 +482,28 @@ input:-webkit-autofill {
 
 
 
+
+
+.footer-form {
+  // .footer-form__links
+  &__links {
+    text-align : center;
+    margin-top : 45px;
+  }
+  // .footer-form__link
+  &__link {
+
+    font-size: 14px;
+    line-height: 1.2857;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-decoration-line: underline;
+    color: #000000;
+    display : block;
+    margin-top : 30px;
+
+    &:hover{
+      text-decoration : none;
+    }
+  }
+}
