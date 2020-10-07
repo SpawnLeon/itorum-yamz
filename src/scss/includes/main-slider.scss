@@ -93,6 +93,9 @@
     background-position : center;
     background-size     : cover;
 
+    @media screen and (max-width : 660px) {
+      height: 390px;
+    }
 
   }
 

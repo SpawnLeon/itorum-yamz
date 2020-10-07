@@ -507,3 +507,10 @@ input:-webkit-autofill {
     }
   }
 }
+
+[data-toggle="datepicker"] {
+  background-image : url(../../img/svg/date.svg);
+  background-position : top 50% right 13px;
+  background-repeat : no-repeat;
+
+}

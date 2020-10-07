@@ -9,16 +9,31 @@
     width       : 100vw;
     margin-left : calc((100vw - #{$desktopWidth} + 30px) / -2);
 
+    @media screen and (max-width : 1280px) {
+      margin-left : -15px;
+    }
+
   }
 
   // .main-page__repair-documentation
   &__repair-documentation {
     margin-top : 110px;
+
+    @media screen and (max-width : 1140px) {
+      margin-top : 100px;
+    }
+    @media screen and (max-width : 560px) {
+      margin-top : 40px;
+    }
   }
 
   // .main-page__about
   &__about {
     margin-top : 100px;
+
+    @media screen and (max-width : 560px) {
+      margin-top : 75px;
+    }
   }
 
   // .main-page__advantages
@@ -31,14 +46,22 @@
     width       : 100vw;
     margin-top  : 70px;
     margin-left : calc((100vw - #{$desktopWidth} + 30px) / -2);
+
+    @media screen and (max-width : 1280px) {
+      margin-left : -15px;
+    }
   }
 
   // .main-page__filter
   &__filter {
     position : relative;
+    z-index  : 1;
     top      : -390px;
     height   : 0;
-    z-index : 1;
+
+    @media screen and (max-width : 660px) {
+      top      : -340px;
+    }
   }
 
 }
@@ -59,6 +82,15 @@
     flex-wrap  : wrap;
     margin-top : 60px;
 
+    @media screen and (max-width : 992px) {
+      justify-content : center;
+      margin          : 0 -15px;
+    }
+
+    @media screen and (max-width : 560px) {
+      margin : 0 -4px;
+    }
+
 
   }
 
@@ -68,6 +100,18 @@
     min-width     : 250px;
     max-width     : 320px;
     margin-bottom : 60px;
+
+    @media screen and (max-width : 992px) {
+      min-width : 0;
+      max-width : 220px;
+      margin    : 0 15px 30px;
+    }
+
+    @media screen and (max-width : 660px) {
+      flex   : 1 1 calc(100% / 2 - 8px);
+      margin : 0 4px 30px;
+    }
+
   }
 }
 
@@ -80,6 +124,10 @@
     align-items     : center;
     justify-content : center;
     min-height      : 226px;
+
+    @media screen and (max-width : 560px) {
+      min-height : 140px;
+    }
   }
 
   // .item-category__title
@@ -98,29 +146,73 @@
   padding          : 40px 0;
   background-color : #1568a4;
 
+  @media screen and (max-width : 1140px) {
+    padding : 100px 0;
+  }
+  @media screen and (max-width : 560px) {
+    padding : 15px 0 60px;
+  }
+
   // .write-us-block__description
   &__description {
     flex         : 0 0 400px;
+    max-width    : 400px;
     margin-right : 240px;
+
+    @media screen and (max-width : 1140px) {
+      flex-basis   : 100%;
+      max-width    : none;
+      margin-right : 0;
+    }
   }
 
   // .write-us-block__form
   &__form {
     flex : 0 0 410px;
+
+    @media screen and (max-width : 1140px) {
+      max-width : 480px;
+      margin    : 87px auto 0;
+    }
+
+    @media screen and (max-width : 1140px) {
+      margin-top : 40px;
+    }
   }
 
   // .write-us-block__container
   &__container {
     display : flex;
+
+    @media screen and (max-width : 1140px) {
+      flex-direction : column;
+    }
   }
 }
 
 .description-write-us {
-  max-width : 400px;
-  color     : #fff;
+  color : #fff;
+
+  @media screen and (max-width : 1140px) {
+    display : flex;
+  }
+
+  @media screen and (max-width : 560px) {
+
+  }
+
 
   // .description-write-us__icon
   &__icon {
+    flex-shrink : 0;
+
+    @media screen and (max-width : 1140px) {
+      margin-right : 47px;
+    }
+    @media screen and (max-width : 560px) {
+      max-width    : 87px;
+      margin-right : 15px;
+    }
   }
 
   // .description-write-us__title
@@ -129,12 +221,17 @@
     font-weight : bold;
     line-height : 1.2;
     margin-top  : 50px;
+
+    @media screen and (max-width : 560px) {
+      margin-top : 0;
+    }
   }
 
   // .description-write-us__text
   &__text {
     font-size   : 13px;
     line-height : 1.3846;
+
 
     p {
       font : inherit;
@@ -149,8 +246,12 @@
     font-weight    : bold;
     line-height    : 1.2666;
     letter-spacing : 0.05em;
-
     color          : #fff;
+
+    @media screen and (max-width : 560px) {
+      font-size   : 24px;
+      line-height : 1.25;
+    }
   }
 
   // .form-write-us__inner
@@ -182,6 +283,11 @@
     display         : flex;
     align-items     : center;
     justify-content : space-between;
+
+    @media screen and (max-width : 992px) {
+      display   : block;
+      max-width : 540px;
+    }
   }
 
   // .repair-documentation__title
@@ -191,11 +297,20 @@
     line-height    : 1.2666;
     letter-spacing : 0.05em;
     color          : #252b33;
+
+    @media screen and (max-width : 560px) {
+      font-size   : 24px;
+      line-height : 1.25;
+    }
   }
 
   // .repair-documentation__search
   &__search {
     flex : 0 1 413px;
+
+    @media screen and (max-width : 992px) {
+      margin-top : 30px;
+    }
 
   }
 
@@ -204,6 +319,10 @@
     display    : flex;
     flex-wrap  : wrap;
     margin-top : 30px;
+
+    @media screen and (max-width : 560px) {
+      display : block;
+    }
   }
 
   // .repair-documentation__item
@@ -224,7 +343,19 @@
 
   // .item-repair-documentation__title
   &__title {
-    margin-top : 20px;
+    font-size   : 16px;
+    font-weight : 500;
+    line-height : 1.12;
+    margin-top  : 20px;
+
+    @media screen and (max-width : 560px) {
+      text-align  : center;
+      white-space : nowrap;
+
+      > br {
+        display : none;
+      }
+    }
 
   }
 }
@@ -261,22 +392,41 @@
   display : flex;
   color   : #252b33;
 
+  @media screen and (max-width : 660px) {
+    display : block;
+  }
+
   // .about-block__image
   &__image {
     flex         : 0 0 331px;
     margin-right : 100px;
+
+    @media screen and (max-width : 1140px) {
+      margin-right : 40px;
+    }
+
+    @media screen and (max-width : 660px) {
+      margin-right : 0;
+    }
   }
 
   // .about-block__content
   &__content {
 
+    @media screen and (max-width : 660px) {
+      margin-right : 0;
+      margin-top : 25px;
+    }
+
   }
 
   // .about-block__title
   &__title {
-    font-size   : 30px;
-    font-weight : bold;
-    line-height : 1.2666;
+    font-size      : 30px;
+    font-weight    : bold;
+    line-height    : 1.2666;
+    margin-top     : 0;
+    text-transform : uppercase;
   }
 
   // .about-block__text
@@ -292,6 +442,10 @@
   &__inner {
     display : flex;
 
+    @media screen and (max-width : 660px) {
+      display : block;
+    }
+
   }
 
   // .advantages-block__item
@@ -299,8 +453,21 @@
     flex         : 1 1 calc(100% / 3);
     margin-right : 120px;
 
+    @media screen and (max-width : 1140px) {
+      margin-right : 30px;
+
+      @media screen and (max-width : 660px) {
+        margin-right : 0;
+        margin-bottom : 50px;
+      }
+    }
+
     &:last-child {
       margin-right : 0;
+
+      @media screen and (max-width : 660px) {
+        margin-bottom : 50px;
+      }
     }
 
   }
@@ -311,6 +478,13 @@
 
   // .item-advantage__icon
   &__icon {
+    width  : 97px;
+    height : 97px;
+
+    @media screen and (max-width : 660px) {
+      width  : auto;
+      height : auto;
+    }
   }
 
   // .item-advantage__title
@@ -318,7 +492,7 @@
     font-size   : 15px;
     font-weight : bold;
     line-height : 1.2;
-    margin-top  : 20px;
+    margin-top  : 10px;
     color       : #252b33;
   }
 
@@ -340,9 +514,29 @@
   background-image  : url(../../img/forgery.png);
   background-repeat : no-repeat;
 
+  @media screen and (max-width : 1280px) {
+    background-position : -450px 0;
+  }
+
+  @media screen and (max-width : 560px) {
+    background-position: 0 -90px;
+    padding-top: 170px;
+    padding-bottom : 27px;
+  }
+
+
+
   // .forgery-information__inner
   &__inner {
     padding-left : 470px;
+
+    @media screen and (max-width : 1280px) {
+      padding-left : 260px;
+    }
+
+    @media screen and (max-width : 560px) {
+      padding-left : 15px;
+    }
   }
 }
 
@@ -359,9 +553,20 @@
     font-size      : 36px;
     font-weight    : bold;
     line-height    : 1.25;
+    margin         : 0 15px;
     text-align     : center;
     text-transform : uppercase;
     color          : #fff;
+
+    @media screen and (max-width : 768px) {
+      font-size   : 30px;
+      line-height : 1.2666;
+      margin      : 0 15px;
+    }
+
+    @media screen and (max-width : 660px) {
+      display : none;
+    }
   }
 
   // .main-page-filter__form
@@ -372,10 +577,22 @@
   &__btn {
     padding : 19px 75px;
 
-    &:hover {
-      background-color : #034c80;
-      color : #fff;
+    @media screen and (max-width : 900px) {
+      margin : 15px 25px;
     }
+
+    @media screen and (max-width : 660px) {
+      margin: 15px auto;
+      display: block;
+      width: 100%;
+      max-width: 230px;
+    }
+
+    &:hover {
+      color            : #fff;
+      background-color : #034c80;
+    }
+
 
   }
 }
@@ -384,23 +601,46 @@
   // .form-main-page-filter__row
   &__row {
     justify-content : center;
+
+    @media screen and (max-width : 660px) {
+      display : block;
+    }
   }
 
   // .form-main-page-filter__col
   &__col {
+
+    @media screen and (max-width : 660px) {
+      margin : 13px auto;
+      max-width : 250px;
+
+    }
+
     // .form-main-page-filter__col--model
     &--model {
       flex-basis : 305px;
+
+      @media screen and (max-width : 1140px) {
+        flex-basis : auto;
+      }
     }
 
     // .form-main-page-filter__col--date
     &--date {
       flex-basis : 196px;
+
+      @media screen and (max-width : 1140px) {
+        flex-basis : auto;
+      }
     }
 
     // .form-main-page-filter__col--number
     &--number {
       flex-basis : 305px;
+
+      @media screen and (max-width : 1140px) {
+        flex-basis : auto;
+      }
     }
   }
 }

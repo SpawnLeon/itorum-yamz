@@ -1,13 +1,11 @@
-.page {
-  // .page__footer
-  &__footer {
-  }
-}
-
 .footer {
+  padding          : 65px 0 95px;
   color            : #fff;
   background-color : #222325;
-  padding: 65px 0 95px ;
+
+  @media screen and (max-width : 1280px) {
+    padding : 30px 0;
+  }
 
   a {
     color : #fff;
@@ -15,8 +13,11 @@
 
   // .footer__top
   &__top {
-    display         : flex;
+    display     : flex;
     align-items : center;
+    flex-wrap   : wrap;
+
+
   }
 
   // .footer__logo
@@ -26,6 +27,17 @@
   // .footer__menus
   &__menus {
     margin-left : 160px;
+
+    @media screen and (max-width : 1280px) {
+      order       : 3;
+      width       : 100%;
+      margin-top  : 65px;
+      margin-left : 11px;
+    }
+
+    @media screen and (max-width : 660px) {
+      margin-top : 50px;
+    }
   }
 
   // .footer__nav
@@ -38,18 +50,41 @@
 
   // .footer__bottom
   &__bottom {
+    display    : flex;
     margin-top : 140px;
-    display : flex;
+
+    @media screen and (max-width : 992px) {
+      margin-top : 100px;
+    }
+
+    @media screen and (max-width : 660px) {
+      margin-top : 47px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
   }
 
   // .footer__law
   &__law {
     margin-left : 293px;
+
+    @media screen and (max-width : 992px) {
+      margin-left : 0;
+    }
+
+    @media screen and (max-width : 660px) {
+      flex: 0 0 100%;
+      margin-bottom : 35px;
+    }
   }
 
   // .footer__year
   &__year {
     margin-left : auto;
+
+    @media screen and (max-width : 660px) {
+      margin-left : 0;
+    }
   }
 
   // .footer__dev
@@ -59,14 +94,50 @@
 
   // .footer__phones
   &__phones {
+    display     : flex;
     margin-left : 170px;
+
+    @media screen and (max-width : 1280px) {
+      margin-left : auto;
+    }
+
+    @media screen and (max-width : 660px) {
+      align-items    : flex-end;
+      flex-direction : column;
+    }
+
   }
+
   // .footer__phone
   &__phone {
+    font-size       : 13px;
+    font-weight     : bold;
+    line-height     : 1.2307;
     text-decoration : none;
-    font-weight: bold;
-    font-size: 13px;
-    line-height: 1.2307;
+  }
+
+  // .footer__phone-write-us
+  &__phone-write-us {
+    font-size            : 12px;
+    line-height          : 1.25;
+    display              : inline-block;
+    margin-left          : 15px;
+    color                : #fff;
+    text-decoration-line : underline;
+
+    @media screen and (min-width : 993px) {
+      display : none;
+    }
+
+    @media screen and (max-width : 660px) {
+      margin-top : 11px;
+    }
+
+
+    &:hover {
+      text-decoration : none;
+    }
+
   }
 }
 
@@ -74,13 +145,20 @@
 .bottom-menu {
   display : flex;
 
+  @media screen and (max-width : 660px) {
+    display : block;
+  }
 
   // .bottom-menu__item
   &__item {
     margin : 0 50px 0 0;
 
+    @media screen and (max-width : 660px) {
+      margin : 0 0 19px 0;
+    }
+
     &:last-child {
-      margin-right : 0;
+      margin: 0;
     }
   }
 
@@ -93,9 +171,6 @@
 
   }
 }
-
-
-
 
 
 .law-block {

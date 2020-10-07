@@ -12,6 +12,7 @@
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
     "axios": "^0.19.2",
+    "flatpickr": "^4.6.6",
     "jquery": "^3.5.1",
     "swiper": "^5.4.5"
   },

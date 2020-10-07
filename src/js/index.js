@@ -14,6 +14,8 @@ window.axios = axios;
 
 import Swiper from 'swiper';
 
+import flatpickr from 'flatpickr';
+
 document.addEventListener('DOMContentLoaded', () => {
   Array.from(document.querySelectorAll('.item-form__field--text')).
     forEach((el, i) => {
@@ -119,6 +121,11 @@ document.addEventListener('DOMContentLoaded', () => {
         type: 'inline',
       });
     });
+  });
+
+  const Russian = require('flatpickr/dist/l10n/ru.js').default.ru;
+  flatpickr('[data-toggle="datepicker"]', {
+    'locale': Russian,
   });
 
 });

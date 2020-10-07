@@ -2,6 +2,10 @@
   margin-right : 60px;
   padding-top: 70px;
 
+  @media screen and (max-width : 1140px) {
+    display : none;
+  }
+
   // .sidebar__nav
   &__nav {
   }
