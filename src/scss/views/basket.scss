@@ -3,9 +3,10 @@
   &__basket {
     margin-top : 60px;
 
-    @media screen and (max-width : 1023px) {
-      margin-top : 20px;
+    @media screen and (max-width : 767px) {
+      margin-top : 0;
     }
+
 
   }
 }
@@ -19,6 +20,7 @@
 .basket-list {
   // .basket-list__inner
   &__inner {
+
   }
 
   // .basket-list__item
@@ -30,17 +32,20 @@
   &__footer {
     margin-top : 35px;
 
+    @media screen and (max-width : 1140px) {
+      margin-top : 25px;
+    }
+
   }
 
   // .basket-list__btn
   &__btn {
     display     : block;
+    width       : 286px;
     margin-top  : 30px;
     margin-left : auto;
 
-
-    @media screen and (max-width : 1023px) {
-
+    @media screen and (max-width : 1140px) {
       margin-right : auto;
     }
   }
@@ -58,6 +63,13 @@
   padding         : 5px 0 5px 0;
   border-top      : 1px solid #e5e5e5;
 
+  @media screen and (max-width : 767px) {
+    flex-wrap      : wrap;
+    padding-top    : 15px;
+    padding-bottom : 15px;
+    padding-left   : 65px;
+  }
+
 
   &:last-child {
     border-bottom : 1px solid #e5e5e5;
@@ -73,15 +85,48 @@
     padding-right : 15px;
 
 
+    @media screen and (max-width : 1140px) {
+      display               : grid;
+      min-width             : 0;
+      grid-template-columns : 100px 210px;
+      grid-template-rows    : 1fr 1fr;
+    }
+
+    @media screen and (max-width : 767px) {
+      align-items           : flex-start;
+      width                 : calc(100% + 65px);
+      margin-left           : -65px;
+      grid-template-columns : 80px 100%;
+    }
+
+
   }
 
 
   // .item-basket-list__image
   &__image {
-    flex         : 0 0 77px;
-    width        : 77px;
-    max-height   : 74px;
-    margin-right : 22px;
+    display         : flex;
+    flex            : 0 0 77px;
+    justify-content : center;
+    width           : 77px;
+    max-height      : 74px;
+    margin-right    : 22px;
+
+    @media screen and (max-width : 1140px) {
+      grid-column : 1 / 2;
+      grid-row    : 1 / 3;
+      margin-right    : 0;
+    }
+
+
+    img {
+
+      @media screen and (max-width : 767px) {
+        max-width : 51px;
+      }
+
+    }
+
 
   }
 
@@ -100,12 +145,20 @@
     text-decoration : none;
     color           : $mainFontColor;
 
+    @media screen and (max-width : 767px) {
+      max-width : none;
+    }
+
 
   }
 
   // .item-basket-list__props
   &__props {
     margin-top : 3px;
+
+    @media screen and (max-width : 767px) {
+      margin-top : 0;
+    }
   }
 
   // .item-basket-list__price
@@ -115,7 +168,7 @@
     padding     : 0 15px;
     white-space : nowrap;
 
-    @media screen and (max-width : 1023px) {
+    @media screen and (max-width : 767px) {
       display : none;
     }
   }
@@ -127,11 +180,15 @@
     white-space : nowrap;
 
 
-    @media screen and (max-width : 1023px) {
-
+    @media screen and (max-width : 1140px) {
+      margin  : 0 auto;
+      padding : 0 15px;
     }
-    @media screen and (max-width : 767px) {
-      margin : 20px 0 0 80px;
+
+    @media screen and (max-width : 560px) {
+      width      : 100%;
+      margin-top : 20px;
+      text-align : left;
     }
   }
 
@@ -141,20 +198,29 @@
     margin-left  : 60px;
     padding-left : 15px;
 
-    @media screen and (max-width : 1023px) {
-
+    @media screen and (max-width : 1140px) {
+      margin-left  : auto;
+      padding-left : 15px;
     }
 
-    @media screen and (max-width : 767px) {
-      position : absolute;
-      right    : 15px;
-      bottom   : 15px;
-    }
+
   }
 
   // .item-basket-list__delete
   &__delete {
     flex : 0 0 19px;
+
+    @media screen and (max-width : 560px) {
+      position : absolute;
+      right    : 0;
+      bottom   : 53px;
+    }
+
+    > svg {
+      @media screen and (max-width : 767px) {
+        max-width : 25px;
+      }
+    }
   }
 
   // .item-basket-list__qty
@@ -162,15 +228,11 @@
     margin  : 0 auto;
     padding : 0 15px;
 
-    @media screen and (max-width : 1023px) {
-
-    }
-
     @media screen and (max-width : 767px) {
-      margin : 20px 0 0 80px;
+      margin-top  : 15px;
+      margin-left : 0;
     }
   }
-
 }
 
 .item-basket-list:first-child {
@@ -185,7 +247,7 @@
     line-height : 1.2857;
 
 
-    @media screen and (max-width : 1023px) {
+    @media screen and (max-width : 767px) {
       display : none;
     }
   }
@@ -214,6 +276,10 @@
     &::before {
       content : 'Характеристики';
       @include basket-table-headers;
+
+      @media screen and (max-width : 1140px) {
+        display : none;
+      }
     }
   }
 
@@ -257,6 +323,10 @@
 
 .prop-item-basket-list {
   display : block;
+
+  @media screen and (max-width : 767px) {
+    display : inline-block;
+  }
 
 
   // .prop-item-basket-list__name

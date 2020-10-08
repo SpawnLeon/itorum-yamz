@@ -228,6 +228,20 @@
   }
 }
 
+.basket-block {
+  .header {
+    font-size   : 12px;
+    line-height : 1.25;
+    position    : relative;
+    z-index     : 2;
+
+    @media screen and (max-width : 992px) {
+      position : relative;
+      z-index : 9999;
+    }
+  }
+}
+
 .page--front {
   .header__row--middle {
     background-color : #fff;

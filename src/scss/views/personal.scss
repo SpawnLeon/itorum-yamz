@@ -7,10 +7,12 @@
   border-top       : 1px solid #c4c4c4;
   background-color : #f4f4f4;
 
+  @media screen and (max-width : 1280px) {
+    margin-left : -15px;
+  }
+
   // .personal-page__inner
   &__inner {
-
-
 
 
   }
@@ -24,6 +26,7 @@
   &__content {
     flex : 1 1 auto;
   }
+
   .item-form__field--text {
     background-color : #fff;
   }
@@ -43,12 +46,21 @@
 }
 
 .sidebar-personal-menu {
-  display : flex;
+  display    : flex;
+
+  @media screen and (max-width : 767px) {
+    overflow-x : auto;
+    padding-bottom: 15px;
+  }
 
 
   // .sidebar-personal-menu__item
   &__item {
     margin : 0 50px 0 0;
+
+    @media screen and (max-width : 1140px) {
+      margin : 0 9px 0 0;
+    }
   }
 
   // .sidebar-personal-menu__link
@@ -64,6 +76,15 @@
     letter-spacing  : 0.1em;
     text-transform  : uppercase;
     color           : #252b33;
+
+    @media screen and (max-width : 1140px) {
+      padding : 20px 30px;
+    }
+
+    @media screen and (max-width : 767px) {
+      font-size   : 13px;
+      line-height : 1.2307;
+    }
 
     &::after {
       content      : '';

@@ -35,6 +35,10 @@
   &--left {
     margin-right : 30px;
     flex: 1 1 auto;
+
+    @media screen and (max-width : 767px) {
+      margin-right : 0;
+    }
   }
 
   // .panel-contacts--right
@@ -147,14 +151,6 @@
 }
 
 
-@media screen and (max-width : 767px) {
-  .form-contacts .form__row > .form__col--6 {
-    flex : 0 0 100%;
-  }
-  .form-contacts .form__row {
-    flex-wrap : wrap;
-  }
-}
 
 
 .contacts-props {
@@ -187,7 +183,7 @@
   &__inner {
     display   : flex;
     flex-wrap : wrap;
-    margin    : 25px -10px 0;
+    margin    : 0 -10px 0;
   }
 
   // .shops-block__item

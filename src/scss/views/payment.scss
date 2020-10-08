@@ -1,7 +1,7 @@
 .payment-page {
   // .payment-page__icons
   &__icons {
-    margin-bottom: 85px;
+    margin-bottom : 85px;
   }
 
   // .payment-page__content
@@ -10,20 +10,28 @@
 
   // .payment-page__block
   &__block {
-    max-width : 850px;
-    margin-bottom: 40px;
+    max-width     : 850px;
+    margin-bottom : 40px;
   }
 }
 
 .icons-payment {
   display         : flex;
+  flex-wrap       : wrap;
   justify-content : center;
 
   // .icons-payment__item
   &__item {
-    flex       : 0 0 200px;
+    flex       : 0 1 200px;
     margin     : 0 70px;
     text-align : center;
+
+    @media screen and (max-width : 992px) {
+      margin : 0 30px 30px;
+    }
+    @media screen and (max-width : 767px) {
+      flex : 1 1 auto;
+    }
   }
 }
 
@@ -48,19 +56,19 @@
 .payment-block {
   // .payment-block__title
   &__title {
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 1.25;
-    color: #252B33;
+    font-size   : 20px;
+    font-weight : bold;
+    line-height : 1.25;
+    color       : #252b33;
 
   }
 
   // .payment-block__text
   &__text {
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.29;
-    margin-top : 13px;
+    font-size   : 14px;
+    font-weight : normal;
+    line-height : 1.29;
+    margin-top  : 13px;
 
   }
 }

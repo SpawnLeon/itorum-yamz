@@ -2,13 +2,28 @@
   font-size   : 14px;
   line-height : 1.2857;
   display     : flex;
+  flex-wrap   : wrap;
 
+  @media screen and (max-width : 1140px) {
+    justify-content : space-between;
+  }
 
   // .total-block__row
   &__row {
-    display         : flex;
-    align-items     : baseline;
-    justify-content : space-between;
+    display     : flex;
+    align-items : baseline;
+
+    @media screen and (max-width : 1140px) {
+      min-width : 25%;
+    }
+
+    @media screen and (max-width : 660px) {
+      flex            : 0 1 45%;
+      justify-content : space-between;
+      margin-bottom : 15px;
+
+    }
+
 
     // .total-block__row--order-price
     &--order-price {
@@ -20,11 +35,20 @@
     // .total-block__row--vat
     &--vat {
       margin-top : 40px;
+
+      @media screen and (max-width : 1140px) {
+        margin-top : 20px;
+      }
     }
 
     // .total-block__row--qty
     &--qty {
       margin-left : 99px;
+
+      @media screen and (max-width : 1140px) {
+        margin-left : 0;
+      }
+
 
     }
 
@@ -32,17 +56,28 @@
     &--weight {
       margin-left : 70px;
 
+      @media screen and (max-width : 1140px) {
+        margin-left : 0;
+      }
     }
 
     // .total-block__row--total
     &--total {
       margin-left : auto;
+
+      @media screen and (max-width : 1140px) {
+        margin-left : 0;
+      }
+
     }
 
     // .total-block__row--discount
     &--discount {
       margin-left : 40px;
 
+      @media screen and (max-width : 1140px) {
+        margin-left : 0;
+      }
     }
   }
 
@@ -53,15 +88,15 @@
 
     // .total-block__title--order-price
     &--order-price {
-      font-size   : 16px;
-      line-height : 1.12;
+      font-size    : 16px;
+      line-height  : 1.12;
       margin-right : 30px;
     }
 
     // .total-block__title--vat
     &--vat {
-      font-size   : 14px;
-      line-height : 1.29;
+      font-size    : 14px;
+      line-height  : 1.29;
       margin-right : 30px;
     }
   }
@@ -76,7 +111,7 @@
     &--big {
       font-size      : 30px;
       font-weight    : bold;
-      line-height    : 38px;
+      line-height    : 1.2666;
       letter-spacing : 0.05em;
 
     }
@@ -92,10 +127,20 @@
   // .total-block__block
   &__block {
 
+
     // .total-block__block--order-price
     &--order-price {
       margin-top  : -11px;
       margin-left : 60px;
+
+      @media screen and (max-width : 1140px) {
+
+        width        : 100%;
+        max-width    : 300px;
+        margin-top   : 40px;
+        margin-right : auto;
+        margin-left  : auto;
+      }
     }
   }
 
