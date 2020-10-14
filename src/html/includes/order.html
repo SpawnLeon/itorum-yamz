@@ -1,6 +1,9 @@
 <div class="<%= addClass  %>  order-product-list">
   <div class="order-product-list__header">
-
+    <a href=""
+       class="order-product-list__back">
+      в список заказов
+    </a>
 
     <div class="order-product-list__title">
       Заказ № ИМ/112525/05
@@ -10,6 +13,30 @@
     </div>
     <div class="order-product-list__expected">
       <span>Ожидается</span> 25.02.2020
+    </div>
+
+
+    <div class="order-product-list__actions-2">
+      <button
+        type="button"
+        class="order-product-list__btn  order-product-list__copy-orders"
+      >
+        <svg
+          width="24"
+          height="25">
+          <use xlink:href="img/spritemap.svg#sprite-copy"></use>
+        </svg>
+      </button>
+      <button
+        type="button"
+        class="order-product-list__btn order-product-list__pdf"
+      >
+        <svg
+          width="28"
+          height="28">
+          <use xlink:href="img/spritemap.svg#sprite-pdf"></use>
+        </svg>
+      </button>
     </div>
 
 
@@ -76,6 +103,83 @@
       </div>
     </div>
 
+    <div class="order-product-list__item  item-order-product-list">
+      <div class="item-order-product-list__image">
+        <img
+          src="uploads/category/1.png"
+          alt="">
+      </div>
+      <div class="item-order-product-list__info">
+        <a
+          href=""
+          class="item-order-product-list__name">
+          Водяной насос 840.1307010-03
+        </a>
+      </div>
+      <div class="item-order-product-list__props props-item-order-product-list">
+
+        <div class="props-item-order-product-list__item prop-item-order-product-list">
+          <span class="prop-item-order-product-list__name">Вес</span>
+          <span class="prop-item-order-product-list__value">18.86 кг</span>
+        </div>
+        <div class="props-item-order-product-list__item prop-item-order-product-list">
+          <span class="prop-item-order-product-list__name">(Д х Ш х В)</span>
+          <span class="prop-item-order-product-list__value">0.3 x 0.31 x 0.24 м</span>
+        </div>
+
+
+      </div>
+
+
+      <div class="item-order-product-list__price">
+        11 000
+      </div>
+      <div class="item-order-product-list__qty">
+        2
+      </div>
+      <div class="item-order-product-list__price-total">
+        22 000
+      </div>
+    </div>
+
+    <div class="order-product-list__item  item-order-product-list">
+      <div class="item-order-product-list__image">
+        <img
+          src="uploads/category/1.png"
+          alt="">
+      </div>
+      <div class="item-order-product-list__info">
+        <a
+          href=""
+          class="item-order-product-list__name">
+          Водяной насос 840.1307010-03
+        </a>
+      </div>
+      <div class="item-order-product-list__props props-item-order-product-list">
+
+        <div class="props-item-order-product-list__item prop-item-order-product-list">
+          <span class="prop-item-order-product-list__name">Вес</span>
+          <span class="prop-item-order-product-list__value">18.86 кг</span>
+        </div>
+        <div class="props-item-order-product-list__item prop-item-order-product-list">
+          <span class="prop-item-order-product-list__name">(Д х Ш х В)</span>
+          <span class="prop-item-order-product-list__value">0.3 x 0.31 x 0.24 м</span>
+        </div>
+
+
+      </div>
+
+
+      <div class="item-order-product-list__price">
+        11 000
+      </div>
+      <div class="item-order-product-list__qty">
+        2
+      </div>
+      <div class="item-order-product-list__price-total">
+        22 000
+      </div>
+    </div>
 
 
   </div>
@@ -95,12 +199,12 @@
 
         <div class="order-total-block__item order-total-block__item--right">
           <div class="order-total-block__title">Итого:</div>
-          <div class="order-total-block__value">120 000 ₽ </div>
+          <div class="order-total-block__value">120 000 ₽</div>
         </div>
 
         <div class="order-total-block__item order-total-block__item--right">
           <div class="order-total-block__title">Скидка:</div>
-          <div class="order-total-block__value">5% </div>
+          <div class="order-total-block__value">5%</div>
         </div>
 
       </div>
@@ -116,7 +220,7 @@
             <div class="order-total-block__value order-total-block__value--vat">19 000 ₽</div>
           </div>
         </div>
-        </div>
+      </div>
 
     </div>
 

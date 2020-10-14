@@ -2,7 +2,7 @@
   font-size   : 12px;
   line-height : 1.25;
   position    : relative;
-  z-index     : 2;
+  z-index     : 20;
 
   @media screen and (max-width : 992px) {
     position : static;
@@ -237,7 +237,6 @@
 
     @media screen and (max-width : 992px) {
       position : relative;
-      z-index : 9999;
     }
   }
 }
@@ -297,12 +296,30 @@
     top            : 0;
     padding-top    : 11px;
     padding-bottom : 10px;
-
+    height: 44px;
 
   }
 
   .catalog-menu__link > svg {
     fill : #fff;
+  }
+
+  .header__personal {
+    margin-right : 100px;
+    color : #fff;
+
+    @media screen and (max-width : 660px) {
+      top: 14px;
+      right: 5px;
+      left: auto;
+    }
+  }
+
+  .basket-block {
+    top : 10px;
+  }
+  .header {
+    position : relative;
   }
 }
 

@@ -20,6 +20,11 @@
   // .personal-page__sidebar
   &__sidebar {
     margin-bottom : 90px;
+
+    @media screen and (max-width : 767px) {
+      margin-bottom : 30px;
+    }
+
   }
 
   // .personal-page__content

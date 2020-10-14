@@ -37,26 +37,27 @@
               <use xlink:href="img/spritemap.svg#sprite-header-logo"></use>
             </svg>
           </a>
-          <div class="header__search">
-            <form action=""
-                  class="header__search search-block">
-              <label class="search-block__label">
-                <input class="search-block__field"
-                       type="text"
-                       placeholder="Поиск изделия по наименованию, назначению, S/N">
-              </label>
-              <button class="search-block__btn"
-                      type="submit"
-                      value="Поиск">
-                <svg width="14"
-                     height="15">
-                  <use xlink:href="img/spritemap.svg#sprite-search"></use>
-                </svg>
-              </button>
-            </form>
-          </div>
+
+          <form action=""
+                class="header__search search-block">
+            <label class="search-block__label">
+              <input class="search-block__field"
+                     type="text"
+                     placeholder="Поиск изделия по наименованию, назначению, S/N">
+            </label>
+            <button class="search-block__btn"
+                    type="submit"
+                    value="Поиск">
+              <svg width="14"
+                   height="15">
+                <use xlink:href="img/spritemap.svg#sprite-search"></use>
+              </svg>
+            </button>
+          </form>
+
           <div class="header__city city">
-            <div class="city__inner" onclick="this.nextElementSibling.classList.toggle('city-down--open')">
+            <div class="city__inner"
+                 onclick="this.nextElementSibling.classList.toggle('city-down--open')">
               <div class="city__selected">
                 Петропавловск-Камчатский
               </div>
@@ -586,6 +587,9 @@
       <div class="footer__phones">
         <a href="tel:+74852587878"
            class="footer__phone">+7 (4852) 58-78-78</a>
+        <button type="button"
+           class="footer__phone-write-us">Напишите нам</button>
+
       </div>
 
 

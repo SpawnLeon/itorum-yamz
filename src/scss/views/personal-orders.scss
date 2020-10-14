@@ -35,13 +35,22 @@
     line-height : 1.2857;
     padding     : 15px 15px 15px 15px;
 
+    @media screen and (max-width : 992px) {
+      padding : 15px 10px;
+    }
+
+
   }
 
   td {
     padding : 18px 15px 18px 15px;
 
+    @media screen and (max-width : 992px) {
+      padding : 15px 10px;
+    }
+
     @media screen and (max-width : 767px) {
-      padding : 10px 0 10px 0;
+      padding : 10px 0 0 0;
     }
 
 
@@ -62,12 +71,12 @@
 
     // .table-orders__status--new
     &--new {
-      color       : #04914D;
+      color : #04914d;
     }
 
     // .table-orders__status--process
     &--process {
-      color       : #04914D;
+      color : #04914d;
 
     }
 
@@ -83,21 +92,28 @@
 }
 
 .personal-orders {
-  margin: 0 auto 0;
   max-width : 1060px;
+  margin    : 0 auto 0;
 
   // .personal-orders__copy-orders
   &__copy-orders {
+    flex-shrink : 0;
   }
 
   // .personal-orders__pdf
   &__pdf {
+    flex-shrink : 0;
     margin-left : 20px;
   }
 
   // .personal-orders__table
   &__table {
     margin-top : 45px;
+
+    @media screen and (max-width : 660px) {
+      margin-top : 15px;
+    }
+
   }
 
   // .personal-orders__header
@@ -110,17 +126,22 @@
 
 
   @media screen and (max-width : 767px) {
-    display               : grid;
-    padding               : 5px 0;
-    grid-template-columns : repeat(3, calc(100% / 3 - 12px));
-    grid-column-gap       : 18px;
+    display         : grid;
+    padding         : 5px 0;
+    grid-column-gap : 18px;
+  }
+
+  @media screen and (max-width : 560px) {
+    grid-template-columns: 120px 50px 100px;
+    grid-column-gap: 10px;
   }
 
   // .item-personal-order__title
   &__title {
     display : none;
+
     @media screen and (max-width : 767px) {
-      display       : block;
+      display       : inline-block;
       margin-bottom : 5px;
     }
   }
@@ -139,6 +160,11 @@
   &__status {
     grid-column : 2 / 3;
     grid-row    : 1 / 2;
+
+    @media screen and (max-width : 767px) {
+      text-align : right;
+    }
+
   }
 
   // .item-personal-order__count
@@ -155,6 +181,15 @@
 
     @media screen and (max-width : 767px) {
       text-align : right;
+    }
+
+    @media screen and (max-width : 560px) {
+      text-align  : left;
+      grid-column : 1 / 2;
+      grid-row    : 3 / 4;
+    }
+    @media screen and (max-width : 360px) {
+      margin-top : -25px;
     }
   }
 
@@ -178,12 +213,28 @@
   &__actions {
     grid-column : 3 / 4;
     grid-row    : 1 / 2;
+
+    @media screen and (max-width : 767px) {
+      position : relative;
+      top      : -7px;
+    }
+  }
+
+  // .item-personal-order__date
+  &__date {
+    @media screen and (max-width : 767px) {
+      display : none;
+    }
   }
 }
 
 
 .header-orders-table {
   display : flex;
+
+  @media screen and (max-width : 660px) {
+    display : block;
+  }
 
   // .header-orders-table__title
   &__title {
@@ -197,6 +248,11 @@
   // .header-orders-table__filter
   &__filter {
     display : flex;
+
+    @media screen and (max-width : 660px) {
+      margin-top : 15px;
+    }
+
   }
 }
 
@@ -204,14 +260,14 @@
 .filter-header-orders {
   // .filter-header-orders__item
   &__item {
-    font-size     : 14px;
-    font-weight   : 500;
-    padding       : 0 3px;
-    color         : #252b33;
-    border-bottom : 2px solid transparent;
-    margin-right : 25px;
+    font-size       : 14px;
+    font-weight     : 500;
+    display         : inline-block;
+    margin-right    : 25px;
+    padding         : 0 3px;
     text-decoration : none;
-    display : inline-block;
+    color           : #252b33;
+    border-bottom   : 2px solid transparent;
 
 
     &.active {
